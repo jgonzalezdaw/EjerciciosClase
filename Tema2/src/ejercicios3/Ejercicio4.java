@@ -29,11 +29,9 @@ public class Ejercicio4 {
 			resultado = entrada.nextInt();
 			int suma = numeroAleatorio + numeroAleatorio2;
 			if (resultado == suma) {
-				System.out.println("Has acertado");
-				System.out.println();
+				System.out.println("\nHas acertado");
 			} else {
-				System.out.println("Has fallado");
-				System.out.println();
+				System.out.println("\nHas fallado");
 			}
 
 			System.out.println("¿Quieres continuar (s/n)?");
