@@ -21,13 +21,18 @@ public class Ejercicio4 {
 		Scanner entrada = new Scanner(System.in);
 
 		while (true) {
+
 			int numeroAleatorio = (int) (Math.random() * 100 + 1);
 			int numeroAleatorio2 = (int) (Math.random() * 100 + 1);
+
 			int resultado;
+
 			System.out.println(numeroAleatorio + "+" + numeroAleatorio2 + "=");
 			System.out.println("¿Resultado?");
 			resultado = entrada.nextInt();
+
 			int suma = numeroAleatorio + numeroAleatorio2;
+
 			if (resultado == suma) {
 				System.out.println("\nHas acertado");
 			} else {
@@ -37,9 +42,7 @@ public class Ejercicio4 {
 			System.out.println("¿Quieres continuar (s/n)?");
 			char letra = entrada.next().charAt(0);
 
-			if (letra == 's') {
-				continue;
-			} else {
+			if (letra != 's') {
 				break;
 			}
 		}
