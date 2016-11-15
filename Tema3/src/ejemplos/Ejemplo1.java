@@ -8,7 +8,6 @@ public class Ejemplo1 {
 		for (int i = 0; i < precios.length; i++) {
 			System.out.println("Posición " + i + ": " + precios[i]);
 		}
-		
 
 	}
 }
