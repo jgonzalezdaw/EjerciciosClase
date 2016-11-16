@@ -12,9 +12,9 @@ public class Condicionales10 {
 		Scanner entrada = new Scanner(System.in);
 
 		System.out.print("Precio? ");
-		
-		if(entrada.hasNextDouble()){
-			
+
+		if (entrada.hasNextDouble()) {
+
 			double precio = entrada.nextDouble();
 			double precioFinal;
 
@@ -22,18 +22,12 @@ public class Condicionales10 {
 
 			System.out.println("Precio final: " + precioFinal);
 
-		} else{
-			
+		} else {
+
 			System.out.println("Entrada incorrecta.");
-			
+
 		}
-		
+
 	}
 
 }
-
-
-
-
-
-

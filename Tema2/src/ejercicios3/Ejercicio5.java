@@ -29,6 +29,3 @@ public class Ejercicio5 {
 	}
 
 }
-
-
-

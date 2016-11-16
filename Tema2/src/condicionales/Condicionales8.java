@@ -1,4 +1,5 @@
 package condicionales;
+
 import java.util.Scanner;
 
 public class Condicionales8 {
@@ -8,29 +9,14 @@ public class Condicionales8 {
 		Scanner entrada = new Scanner(System.in);
 
 		System.out.println("¿Qué edad tienes?");
-		
-		if(entrada.hasNextInt()){
+
+		if (entrada.hasNextInt()) {
 			int edad = entrada.nextInt();
-			System.out.println("Tienes " + edad + 
-					" años.");
-		}else{
+			System.out.println("Tienes " + edad + " años.");
+		} else {
 			System.out.println("Entrada incorrecta");
 		}
-		
-		
-		
-		
 
-		
 	}
 
 }
-
-
-
-
-
-
-
-
-

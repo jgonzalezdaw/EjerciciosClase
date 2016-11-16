@@ -15,17 +15,8 @@ public class Ejercicio3 {
 		do {
 			System.out.println("Introduce un número entre 1 y 10:");
 			num = entrada.nextInt();
-		} while (num <1 || num > 10);
+		} while (num < 1 || num > 10);
 		System.out.println(num);
 	}
 
 }
-
-
-
-
-
-
-
-
-

@@ -22,10 +22,3 @@ public class Ejemplo6 {
 	}
 
 }
-
-
-
-
-
-
-

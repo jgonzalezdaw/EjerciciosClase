@@ -1,13 +1,15 @@
 package condicionales;
+
 import java.util.*;
+
 public class Ejercicio15 {
 	public static void main(String[] args) {
-		
+
 		Scanner entrada = new Scanner(System.in);
 		System.out.print("Escribe un número de mes: ");
 		int mes = entrada.nextInt();
-		
-		switch(mes){
+
+		switch (mes) {
 		case 1:
 		case 3:
 		case 5:
@@ -28,19 +30,8 @@ public class Ejercicio15 {
 			break;
 		default:
 			System.out.println("Mes no válido");
-				
+
 		}
-		 
+
 	}
 }
-
-
-
-
-
-
-
-
-
-
-

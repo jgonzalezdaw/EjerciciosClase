@@ -13,7 +13,7 @@ public class Ejercicio10Alternativo2 {
 			System.out.println("1 → 1E\n2 → 2F\n3 → 33\n4 → Ninguno de los anteriores");
 			respuesta = entrada.nextInt();
 		}
-		
+
 		if (respuesta == 1) {
 			System.out.println("El resultado es correcto");
 		} else {

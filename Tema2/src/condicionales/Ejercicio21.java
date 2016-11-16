@@ -1,4 +1,5 @@
 package condicionales;
+
 import java.net.SocketImpl;
 import java.util.Scanner;
 
@@ -16,7 +17,6 @@ public class Ejercicio21 {
 
 		nombre = nombre.equals("") ? nombre = "Desconocido" : nombre;
 
-	
 		System.out.println(nombre);
 
 	}

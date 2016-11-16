@@ -1,4 +1,5 @@
 package condicionales;
+
 import java.util.*;
 
 public class Ejercicio19 {

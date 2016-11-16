@@ -1,4 +1,5 @@
 package condicionales;
+
 import java.util.Scanner;
 
 public class Ejercicio16 {
@@ -29,11 +30,9 @@ public class Ejercicio16 {
 			System.out.println("30 días");
 			break;
 		case 2:
-			if ((anyo % 400 == 0) || 
-					(anyo % 4 == 0 
-					&& anyo % 100 != 0)) {
+			if ((anyo % 400 == 0) || (anyo % 4 == 0 && anyo % 100 != 0)) {
 				System.out.println("29 días");
-			}else{
+			} else {
 				System.out.println("28 días");
 			}
 			break;

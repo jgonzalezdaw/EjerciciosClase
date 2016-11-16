@@ -25,16 +25,4 @@ public class Ejemplo8 {
 
 	}
 
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 }

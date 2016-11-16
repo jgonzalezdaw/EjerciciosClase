@@ -9,14 +9,13 @@ public class Ejercicio4 {
 		// Escribe una aplicación que pregunte al usuario un número entre 1
 		// y 5. Si responde "3", se le felicitará por haber acertado. Si no, se
 		// le seguirá pidiendo más números.
-		
+
 		Scanner entrada = new Scanner(System.in);
 
-		System.out.println(
-				"Adivina el número entero entre 1 y 5");
+		System.out.println("Adivina el número entero entre 1 y 5");
 
 		int numero, numeroCorrecto = 3;
-		
+
 		numero = entrada.nextInt();
 
 		while (numero != numeroCorrecto) {
@@ -31,8 +30,3 @@ public class Ejercicio4 {
 		System.out.println("Correcto, el número secreto era el " + numeroCorrecto + "\n\nPrograma finalizado");
 	}
 }
-
-
-
-
-

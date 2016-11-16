@@ -15,22 +15,10 @@ public class Ejercicio22 {
 		System.out.println("Escribe \"entre semana\" si es un día de lunes a viernes.");
 		String dia = entrada.nextLine();
 
-		String horarioCierre = (
-				dia.equals("entre semana")) ?
-						"La tienda cerrará a las 20:00h"
+		String horarioCierre = (dia.equals("entre semana")) ? "La tienda cerrará a las 20:00h"
 				: "La tienda cerrará a las 14:00h";
 
 		System.out.println(horarioCierre);
 
 	}
 }
-
-
-
-
-
-
-
-
-
-

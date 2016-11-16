@@ -28,11 +28,11 @@ public class Ejercicio3 {
 			int numeroAleatorio = (int) (Math.random() * 100 + 1);
 			int numeroAleatorio2 = (int) (Math.random() * 100 + 1);
 			int resultado;
-			
+
 			System.out.println(numeroAleatorio + "+" + numeroAleatorio2 + "=");
 			System.out.println("¿Resultado?");
 			resultado = entrada.nextInt();
-			
+
 			int suma = numeroAleatorio + numeroAleatorio2;
 			if (resultado == suma) {
 				System.out.println("Has acertado\n");

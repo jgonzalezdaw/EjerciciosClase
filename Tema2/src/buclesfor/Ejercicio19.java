@@ -20,7 +20,7 @@ public class Ejercicio19 {
 				System.out.println("Escribe tus notas " + "(" + (5 - i) + ")");
 				nota = entrada.nextFloat();
 			} while (nota > 10 || nota < 0);
-			
+
 			suma = nota + suma;
 
 		}

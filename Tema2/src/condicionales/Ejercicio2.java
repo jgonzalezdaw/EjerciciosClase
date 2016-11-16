@@ -1,4 +1,5 @@
 package condicionales;
+
 import java.util.Scanner;
 
 public class Ejercicio2 {
@@ -17,7 +18,7 @@ public class Ejercicio2 {
 			float descuento = (producto * 10) / 100;
 			producto = producto - descuento;
 		}
-		
+
 		System.out.println("El producto le costará: " + producto);
 
 	}

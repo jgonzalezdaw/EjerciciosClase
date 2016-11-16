@@ -15,27 +15,12 @@ public class Ejercicio11 {
 		int num;
 
 		do {
-			System.out.println("Introduce un número entre 1 "
-					+ "y 20:");
+			System.out.println("Introduce un número entre 1 " + "y 20:");
 			num = entrada.nextInt();
-		} while (num<1 || num>20);
-		//while (!(num >= 1 && num <= 20));
+		} while (num < 1 || num > 20);
+		// while (!(num >= 1 && num <= 20));
 		System.out.println("El número es: " + num);
 
 	}
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-

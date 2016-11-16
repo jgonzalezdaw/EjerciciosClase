@@ -23,13 +23,3 @@ public class Ejemplo5 {
 
 	}
 }
-
-
-
-
-
-
-
-
-
-

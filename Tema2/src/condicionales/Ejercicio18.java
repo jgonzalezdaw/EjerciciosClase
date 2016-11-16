@@ -1,4 +1,5 @@
 package condicionales;
+
 import java.util.Scanner;
 
 public class Ejercicio18 {
@@ -13,15 +14,14 @@ public class Ejercicio18 {
 		Scanner entrada = new Scanner(System.in);
 
 		System.out.println("¿Ingresa un número entero");
-		
+
 		if (entrada.hasNextInt()) {
 			int edad = entrada.nextInt();
-			
+
 			if ((edad >= 1) && (edad <= 10)) {
 				System.out.println(edad);
 			} else {
-				System.out.println(
-						"Este valor no esta entre 1 y 10");
+				System.out.println("Este valor no esta entre 1 y 10");
 			}
 
 		} else {

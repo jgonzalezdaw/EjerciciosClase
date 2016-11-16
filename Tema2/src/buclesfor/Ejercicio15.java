@@ -12,8 +12,7 @@ public class Ejercicio15 {
 		double precio;
 
 		for (int i = 1; i <= 4; i++) {
-			System.out.println("Precio del producto " 
-					+ i + ": ");
+			System.out.println("Precio del producto " + i + ": ");
 			precio = entrada.nextDouble();
 			precioFinal = precioFinal + precio;
 		}
@@ -22,9 +21,3 @@ public class Ejercicio15 {
 	}
 
 }
-
-
-
-
-
-

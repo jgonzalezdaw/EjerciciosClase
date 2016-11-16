@@ -35,22 +35,12 @@ public class Condicionales5 {
 			System.out.println("31 DÍAS");
 		} else if (mes == 11) {
 			System.out.println("30 DÍAS");
-		} else if (mes==12){
+		} else if (mes == 12) {
 			System.out.println("31 DÍAS");
-		} else{
+		} else {
 			System.out.println("Entrada de datos errónea.");
 		}
 
 	}
 
 }
-
-
-
-
-
-
-
-
-
-

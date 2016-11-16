@@ -17,7 +17,7 @@ public class Ejercicio6 {
 		double total = precio * cantidad;
 
 		double descuento;
-		
+
 		if (total > 75) {
 			descuento = total * 15 / 100;
 			System.out.println("El precio es " + (total - descuento) + ".");
@@ -25,17 +25,8 @@ public class Ejercicio6 {
 			descuento = total * 5 / 100;
 			System.out.println("El precio es " + (total - descuento) + ".");
 		}
-		
+
 		entrada.close();
 	}
 
 }
-
-
-
-
-
-
-
-
-

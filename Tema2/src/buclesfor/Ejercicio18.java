@@ -12,18 +12,13 @@ public class Ejercicio18 {
 		Scanner entrada = new Scanner(System.in);
 
 		for (contador = 0; contador < 5; contador++) {
-			
-			do{
-				System.out.println("Escribe tus " 
-						+ (5 - contador) + " notas");
+
+			do {
+				System.out.println("Escribe tus " + (5 - contador) + " notas");
 				nota = entrada.nextFloat();
-			}while (nota > 10 || nota < 0);	
-			
+			} while (nota > 10 || nota < 0);
+
 		}
-		
+
 	}
 }
-
-
-
-

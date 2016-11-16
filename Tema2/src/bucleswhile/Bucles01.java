@@ -20,13 +20,3 @@ public class Bucles01 {
 		} while (edad <= 20 || edad >= 60);
 	}
 }
-
-
-
-
-
-
-
-
-
-

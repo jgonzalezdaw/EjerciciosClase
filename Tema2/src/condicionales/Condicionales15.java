@@ -14,17 +14,9 @@ public class Condicionales15 {
 
 			System.out.println(2 * i);
 			i++;
-			
+
 		}
 
 	}
 
 }
-
-
-
-
-
-
-
-

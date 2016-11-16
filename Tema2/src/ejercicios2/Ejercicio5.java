@@ -43,7 +43,7 @@ public class Ejercicio5 {
 
 		if (num == secr) {
 			System.out.println(" Has acertado!");
-		}else{
+		} else {
 			System.out.println("Has fallado!");
 		}
 

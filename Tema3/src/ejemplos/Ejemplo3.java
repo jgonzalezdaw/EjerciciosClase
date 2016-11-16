@@ -8,8 +8,7 @@ public class Ejemplo3 {
 		// del año. Después, muestra todos los valores
 		// usando un bucle while.
 
-		String[] meses = { "Enero", "Febrero", "Marzo", "Abril", 
-				"Mayo", "Junio", "Julio", "Agosto", "Septiembre",
+		String[] meses = { "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre",
 				"Octubre", "Noviembre", "Diciembre" };
 
 		int i = 0;

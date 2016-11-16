@@ -14,15 +14,9 @@ public class Condicionales16 {
 			System.out.println(2 * i - 1);
 			i++;
 		}
-		
+
 		System.out.println("Ahí quedan.");
 
 	}
 
 }
-
-
-
-
-
-

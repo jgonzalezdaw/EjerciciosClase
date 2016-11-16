@@ -1,4 +1,5 @@
 package condicionales;
+
 import java.util.Scanner;
 
 public class Ejercicio14 {
@@ -14,10 +15,10 @@ public class Ejercicio14 {
 		switch (opcion) {
 		case 1:
 			System.out.println("Enero");
-	
+
 		case 2:
 			System.out.println("Febrero");
-		
+
 		case 3:
 			System.out.println("Marzo");
 			break;

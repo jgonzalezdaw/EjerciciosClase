@@ -1,4 +1,5 @@
 package condicionales;
+
 import java.util.Scanner;
 
 public class Ejercicio17 {
@@ -42,9 +43,9 @@ public class Ejercicio17 {
 			int division = numero1 / numero2;
 			System.out.println("El resultado es " + division);
 			break;
-		default: 
+		default:
 			System.out.println("Operación no válida");
-				
+
 		}
 	}
 

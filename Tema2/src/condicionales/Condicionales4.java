@@ -1,4 +1,5 @@
 package condicionales;
+
 import java.util.Scanner;
 
 public class Condicionales4 {
@@ -33,12 +34,3 @@ public class Condicionales4 {
 	}
 
 }
-
-
-
-
-
-
-
-
-

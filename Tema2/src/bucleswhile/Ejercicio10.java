@@ -9,7 +9,7 @@ public class Ejercicio10 {
 		Scanner input = new Scanner(System.in);
 
 		int opcion = 0;
-		boolean valido = false;	// Variable semáforo.
+		boolean valido = false; // Variable semáforo.
 
 		while (valido == false) {
 			System.out.println("¿Cómo se escribe 30 en hexadecimal?"
@@ -21,7 +21,7 @@ public class Ejercicio10 {
 
 				if (opcion == 1) {
 					System.out.println("Correcto.");
-				} else{
+				} else {
 					System.out.println("Incorrecto.");
 				}
 			}

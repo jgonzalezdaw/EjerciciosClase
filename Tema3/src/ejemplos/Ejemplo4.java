@@ -23,7 +23,7 @@ public class Ejemplo4 {
 		}
 
 		System.out.println();
-		
+
 		for (int i = 0; i < precios.length; i++) {
 			System.out.println("Precio " + i + ": " + precios[i]);
 		}
@@ -32,7 +32,3 @@ public class Ejemplo4 {
 
 	}
 }
-
-
-
-

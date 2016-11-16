@@ -24,7 +24,7 @@ public class Ejercicio2 {
 		System.out.println(numeroAleatorio);
 
 		while (i <= 3) {
-			
+
 			System.out.println("Número");
 			numero = entrada.nextInt();
 			if (numero == numeroAleatorio) {
@@ -50,13 +50,5 @@ public class Ejercicio2 {
 		}
 
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 }

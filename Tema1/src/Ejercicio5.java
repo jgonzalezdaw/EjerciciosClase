@@ -9,13 +9,13 @@ public class Ejercicio5 {
 
 		System.out.println("Dime el nombre de un producto.");
 		String producto = entrada.nextLine();
-		
+
 		System.out.println("Dime el precio del producto.");
 		double precio = entrada.nextDouble();
-		
+
 		System.out.println("Dime el porcentaje del producto");
 		double porcentaje = entrada.nextDouble();
-		
+
 		double descuento = precio * porcentaje / 100;
 
 		System.out.println("El producto " + producto + " cuesta " + (precio - descuento) + ".");
