@@ -15,8 +15,7 @@ public class Ejemplo9 {
 		int[] edades = new int[1000];
 
 		// Leemos los datos.
-		System.out.println("Ve introduciendo las edades " + 
-				"de los alumnos y -1 cuando hayas acabado");
+		System.out.println("Ve introduciendo las edades " + "de los alumnos y -1 cuando hayas acabado");
 		int edad;
 		int i = 0;
 		do {
@@ -24,17 +23,18 @@ public class Ejemplo9 {
 			edad = entrada.nextInt();
 			edades[i] = edad;
 			i++;
-		} while (edad != -1);
+		} while (edad != -1 && i < edades.length);
 
 		// Mostramos los datos del array.
+		for (i = 0; i < edades.length; i++) {
+			if (edades[i] != -1) {
+				System.out.println(edades[i]);
+			} else {
+				break;
+			}
+
+		}
 
 	}
 
 }
-
-
-
-
-
-
-
