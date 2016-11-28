@@ -9,12 +9,15 @@ package hoja1ejercicios;
 public class Ejercicio14 {
 
 	public static void main(String[] args) {
-		int[] primos = new int[100];
+
+		final int NUM_PRIMOS = 100;
+
+		int[] primos = new int[NUM_PRIMOS];
 		int numPrimos = 0; // Cantidad de primos encontrada
 		int candidato = 2;
 		boolean esPrimo;
 
-		while (numPrimos < 100) {
+		while (numPrimos < NUM_PRIMOS) {
 			esPrimo = true;
 
 			for (int i = 2; i < candidato; i++) {
