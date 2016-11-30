@@ -31,8 +31,7 @@ public class Ejercicio3 {
 		}
 
 		int i = 0;
-		while (i < nombres.length && !nombreEncontrado 
-				&& !nombres[i].equals("nadie")) {
+		while (i < nombres.length && !nombreEncontrado && !nombres[i].equals("nadie")) {
 			System.out.println(nombres[i]);
 			if (nombres[i].equals("calderon")) {
 				nombreEncontrado = true;
@@ -49,9 +48,3 @@ public class Ejercicio3 {
 	}
 
 }
-
-
-
-
-
-

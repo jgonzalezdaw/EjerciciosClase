@@ -37,40 +37,27 @@ public class Ejercicio4 {
 		boolean preciosCorrectos = true;
 
 		for (int i = 0; i < productos.length; i++) {
-			// boolean preciosCorrectos = true;
-			// double i = 0;
-			System.out.println("Introduzca precio: " + (i + 1));
+			System.out.println("Precio: ");
 			productos[i] = sc.nextDouble();
-
-			if (productos[i] < 0) {
-				preciosCorrectos = false;
-				System.out.println("Se ha encontrado un valor no valido en la posicion " + (i + 1));
-				System.out.println(preciosCorrectos);
-				break;
-			} else {
-				suma = suma + productos[(int) i];
-
-			}
-
 		}
 
 		int i = 0;
+		while (i < productos.length && preciosCorrectos) {
 
-		while (preciosCorrectos) {
-
-			if (productos[i] >= 0) {
-
-				System.out.println("El precio total es: " + suma);
-				System.out.println(preciosCorrectos);
-				break;
-			} else {
-
-				break;
+			suma = suma + productos[i];
+			if (productos[i] < 0) {
+				preciosCorrectos = false;
+				System.out.println("Se ha encontrado un valor no válido "
+						+ "en la posición " + i + ". El programa terminará.");
 			}
+
+			i++;
+
 		}
 
-		System.out.println("\nFin del programa ");
-		System.out.println("*=*=*=*=*=*=*=*=*");
+		if (preciosCorrectos) {
+			System.out.println("Suma: " + suma);
+		}
 
 		sc.close();
 
