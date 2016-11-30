@@ -4,22 +4,25 @@ public class Ejercicio5 {
 
 	public static void main(String[] args) {
 
-		float min = 100, max = 0,
-				temperatura[] = { 15F, 16.1F, 16F, 15.4F, 15F, 14F, 10.2F, 11F, 11.5F, 10F, 10.1F, 9.8F, 9F, 6F };
-		int i, posmin = 0, posmax = 0;
+		double[] temperaturas = { 15, 16.1, 16, 15.4, 15, 14, 
+				10.2, 11, 11.5, 10, 10.1, 9.8, 9, 6 };
 
-		for (i = 0; i < temperatura.length; i++) {
-			System.out.println((i + 1) + "º temperatura es: " + temperatura[i]);
-			if (min > temperatura[i]) {
-				min = temperatura[i];
-				posmin = (i + 1);
+		int posMin = 0;
+		int posMax = 0;
+
+		for (int i = 1; i < temperaturas.length; i++) {
+			if (temperaturas[i] < temperaturas[posMin]) {
+				posMin = i;
+			} 
+			
+			if (temperaturas[i] > temperaturas[posMax]) {
+				posMax = i;
 			}
-			if (max < temperatura[i]) {
-				max = temperatura[i];
-				posmax = (i + 1);
-			}
+
 		}
-		System.out.println("\nTemperatura mínima es " + min + " y está en la posición: " + posmin
-				+ "\nTemperatura máxima es: " + max + " y está en la posición: " + posmax);
+		System.out.println(
+				"La posición de la temperatura mínima es " + posMin + " y el valor es " + temperaturas[posMin]);
+		System.out.println(
+				"La posición de la temperatura máxima es " + posMax + " y el valor es " + temperaturas[posMax]);
 	}
 }
