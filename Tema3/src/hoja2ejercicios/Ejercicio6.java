@@ -44,9 +44,9 @@ public class Ejercicio6 {
 
 		System.out.println("==================Votos contados======================");
 		System.out.println("*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*==*=*=*=*=*=*=*=*=*=*\n");
-		System.out.println("La menor votacion es: " + "\"" + votos[posMin] + "\"" + " y fue la " + (posMin + 1)
+		System.out.println("La menor votacion es: " + "\"" + votos[posMin] + "\"" + " y fue la " + (posMin)
 				+ "º en introducirse.");
-		System.out.println("La mayor votacion es: " + "\"" + votos[posMax] + "\"" + " y fue la " + (posMax + 1)
+		System.out.println("La mayor votacion es: " + "\"" + votos[posMax] + "\"" + " y fue la " + (posMax)
 				+ "º en introducirse.");
 		System.out.println("\n*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*==*=*=*=*=*=*=*=*=*=*");
 		System.out.println("            ==== Fin del Programa ====");
