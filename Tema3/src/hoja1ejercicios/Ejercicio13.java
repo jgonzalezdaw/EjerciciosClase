@@ -11,7 +11,7 @@ public class Ejercicio13 {
 			potencias[i] = (int) Math.pow(2, i);
 
 		}
-		
+
 		System.out.println("Lista de potencias de dos:");
 
 		int i = 0;
@@ -23,5 +23,3 @@ public class Ejercicio13 {
 		}
 	}
 }
-
-

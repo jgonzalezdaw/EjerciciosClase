@@ -12,8 +12,7 @@ public class Ejercicio7 {
 		 * Jueves 3.000.000 Viernes 1.200.000 Sábado 1.800.000 Domingo 2.050.000
 		 */
 
-		int[] espectadores = { 2000000, 2500000, 3100000, 3000000, 1200000, 
-				1800000, 2050000 };
+		int[] espectadores = { 2000000, 2500000, 3100000, 3000000, 1200000, 1800000, 2050000 };
 		int minAud = 0;
 		int maxAud = 0;
 
@@ -27,14 +26,10 @@ public class Ejercicio7 {
 			}
 		}
 		System.out.println("====================================");
-		System.out.println("Espectadores máximos de esta semana: " +
-		espectadores[maxAud]);
+		System.out.println("Espectadores máximos de esta semana: " + espectadores[maxAud]);
 		System.out.println("====================================");
 		System.out.println("====================================");
-		System.out.println("Espectadores mínimos de esta semana: " + 
-		espectadores[minAud]);
+		System.out.println("Espectadores mínimos de esta semana: " + espectadores[minAud]);
 		System.out.println("====================================");
 	}
 }
-
-

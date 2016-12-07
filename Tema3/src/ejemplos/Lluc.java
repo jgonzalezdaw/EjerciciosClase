@@ -17,7 +17,7 @@ public class Lluc {
 		while (i < edades.length) {
 			System.out.println("Introduce edades. Tienes 1000 entradas. -1 para finalizar");
 			edades[i] = entrada.nextInt();
-			if(edades[i] == -1){
+			if (edades[i] == -1) {
 				break;
 			}
 			i++;
@@ -26,18 +26,10 @@ public class Lluc {
 		// Mostramos los datos del array
 		i = 0;
 		while (i < edades.length && edades[i] != -1) {
-			System.out.println(edades[1]);			
+			System.out.println(edades[1]);
 			i++;
-			
+
 		}
 
 	}
 }
-
-
-
-
-
-
-
-

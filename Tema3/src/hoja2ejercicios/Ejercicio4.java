@@ -47,8 +47,8 @@ public class Ejercicio4 {
 			suma = suma + productos[i];
 			if (productos[i] < 0) {
 				preciosCorrectos = false;
-				System.out.println("Se ha encontrado un valor no válido "
-						+ "en la posición " + i + ". El programa terminará.");
+				System.out.println(
+						"Se ha encontrado un valor no válido " + "en la posición " + i + ". El programa terminará.");
 			}
 
 			i++;
@@ -63,8 +63,3 @@ public class Ejercicio4 {
 
 	}
 }
-
-
-
-
-

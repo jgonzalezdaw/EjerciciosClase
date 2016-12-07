@@ -1,8 +1,9 @@
 package ejemplos;
 
 /**
- * Ejemplo de obtención del mayor elemento de un array de valores,
- * guardando en una variable el mayor valor.
+ * Ejemplo de obtención del mayor elemento de un array de valores, guardando en
+ * una variable el mayor valor.
+ * 
  * @author csogorb
  *
  */
