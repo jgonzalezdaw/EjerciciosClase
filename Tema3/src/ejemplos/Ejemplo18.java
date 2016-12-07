@@ -41,9 +41,16 @@ public class Ejemplo18 {
 			edades[i] = edades[posMin];
 			edades[posMin] = aux;
 			
+			// Mostramos cómo va quedando el array,
+			// simplemente para ver cómo va quedando.
+			for(int k=0; k<edades.length; k++){
+				System.out.print(edades[k] + " ");
+			}
+			System.out.println();
 		}
 		
 		// Mostramos el array ya ordenado.
+		System.out.println();
 		for(int i=0; i<edades.length; i++){
 			System.out.print(edades[i] + " ");
 		}
