@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Ejercicio10 {
 
 	public static void main(String[] args) {
-		
+
 		Scanner entrada = new Scanner(System.in);
 		// Escribe un programa que pregunte las temperaturas de las últimas ocho
 		// horas
@@ -40,10 +40,10 @@ public class Ejercicio10 {
 			System.out.print(temp[i] + " ");
 
 		}
-		
+
 		System.out.println();
 		System.out.println("Posición mínima " + temp[0]);
-		System.out.println("Posición máxima " + temp[temp.length] - 1);
+		System.out.println("Posición máxima " + temp[temp.length - 1]);
 
 	}
 
