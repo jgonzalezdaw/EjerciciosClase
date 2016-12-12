@@ -11,7 +11,7 @@ public class Ejercicio12 {
 		int[] numAtomicos = { 8, 2, 10, 20, 12, 71, 15, 23 };
 		int aux;
 		int posMin;
-		int posMax = numAtomicos.length - 1;
+		final int POS_MAX = numAtomicos.length - 1;
 
 		for (int i = 0; i < numAtomicos.length - 1; i++) {
 			posMin = i;
@@ -20,38 +20,20 @@ public class Ejercicio12 {
 					posMin = j;
 
 				}
-				if (numAtomicos[j] > numAtomicos[posMin]) {
-					posMax = j;
-
-				}
 			}
+
 			aux = numAtomicos[i];
 			numAtomicos[i] = numAtomicos[posMin];
 			numAtomicos[posMin] = aux;
+
 			for (int k = 0; k < numAtomicos.length; k++) {
 				System.out.print(numAtomicos[k] + " - ");
 			}
 			System.out.println();
 
 		}
-		System.out.println("El número atómico más pequeño es: " + numAtomicos[0]); // +
-																					// "
-																					// y
-																					// su
-																					// posición
-																					// es:
-																					// "
-																					// +
-																					// numAtomicos[0]);
-		System.out.println("El número atómico más grande es: " + numAtomicos[posMax]); // +
-																						// "
-																						// y
-																						// su
-																						// posición
-																						// es:
-																						// "
-																						// +
-																						// posMax);
+		System.out.println("El número atómico más pequeño es:" + " " + numAtomicos[0]);
+		System.out.println("El número atómico más grande es: " + "" + numAtomicos[POS_MAX]);
 	}
 
 }
