@@ -39,6 +39,12 @@ public class Ejercicio16 {
 		
 		System.out.println(notas[posMin][0] + " tiene la nota "
 				+ "más baja, un " + notas[posMin][1] + ".");
+		
+		for (int i = 0; i < notas.length; i++) {
+			
+			
+			
+		}
 	}
 }
 
