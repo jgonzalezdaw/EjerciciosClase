@@ -24,10 +24,36 @@ public class Ejercicio16 {
 			suma = suma + Float.parseFloat(notas[i][1]);
 		}
 		
-		System.out.println("\nLa nota media es " + suma/notas.length);
+		System.out.println("\nLa nota media es " 
+				+ suma/notas.length + ".");
 		
+		int posMin = 0;
+		for (int i = 0; i < notas.length; i++) {
+			
+			if(Float.parseFloat(notas[i][1]) 
+					< Float.parseFloat(notas[posMin][1])){
+				posMin = i;
+			}
+			
+		}
+		
+		System.out.println(notas[posMin][0] + " tiene la nota "
+				+ "más baja, un " + notas[posMin][1] + ".");
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
