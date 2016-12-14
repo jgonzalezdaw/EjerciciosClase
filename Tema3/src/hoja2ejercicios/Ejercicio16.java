@@ -40,11 +40,18 @@ public class Ejercicio16 {
 		System.out.println(notas[posMin][0] + " tiene la nota "
 				+ "más baja, un " + notas[posMin][1] + ".");
 		
+		int posMax = 0;
 		for (int i = 0; i < notas.length; i++) {
 			
-			
+			if(Float.parseFloat(notas[i][1]) 
+					> Float.parseFloat(notas[posMax][1])){
+				posMax = i;
+			}
 			
 		}
+		
+		System.out.println(notas[posMax][0] + " tiene la nota "
+				+ "más alta, un " + notas[posMax][1] + ".");
 	}
 }
 
