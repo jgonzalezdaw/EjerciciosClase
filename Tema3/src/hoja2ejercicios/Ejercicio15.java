@@ -26,11 +26,11 @@ public class Ejercicio15 {
 		float min;
 		float max;
 		for (int i = 0; i < precios.length; i++) {
-			
+
 			precio = Float.parseFloat(precios[i][1]);
 			min = Float.parseFloat(precios[posMin][1]);
 			max = Float.parseFloat(precios[posMax][1]);
-			
+
 			if (precio < min) {
 				posMin = i;
 			}
@@ -39,7 +39,7 @@ public class Ejercicio15 {
 				posMax = i;
 			}
 		}
-		
+
 		System.out.println("Precio mínimo: " + precios[posMin][1]);
 		System.out.println("Precio máximo: " + precios[posMax][1]);
 

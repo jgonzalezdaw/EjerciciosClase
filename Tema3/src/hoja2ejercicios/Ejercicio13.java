@@ -12,20 +12,9 @@ public class Ejercicio13 {
 		System.out.println("Registros meteorológicos \n=========================");
 
 		for (int i = 0; i < medidas.length; i++) {
-			System.out.println(medidas[i][0] + "\t" 
-					+ medidas[i][1] + "\t" 
-					+ medidas[i][2]);
+			System.out.println(medidas[i][0] + "\t" + medidas[i][1] + "\t" + medidas[i][2]);
 
 		}
 
 	}
 }
-
-
-
-
-
-
-
-
-

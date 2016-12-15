@@ -23,17 +23,17 @@ public class Ejercicio11 {
 		System.out.println("Edades");
 		System.out.println("*=*=*=*");
 		System.out.println("Introduzca la edad de 10 alumnos");
-		
+
 		for (int i = 0; i < edades.length; i++) {
 			System.out.println((i + 1) + "º alumno");
 			edades[i] = sc.nextInt();
 		}
-		
+
 		for (int i = 0; i < edades.length - 1; i++) {
 			System.out.println("--> " + (i + 1) + "º Pasada." + " <-- ");
 			System.out.println("*=*=*=*=*=*=*");
 			posMin = i;
-			
+
 			for (int j = i + 1; j < edades.length; j++) {
 
 				if (edades[j] < edades[posMin]) {
@@ -41,21 +41,21 @@ public class Ejercicio11 {
 				}
 
 			}
-			
+
 			aux = edades[i];
 			edades[i] = edades[posMin];
 			edades[posMin] = aux;
-			
+
 			for (int k = 0; k < edades.length; k++) {
 				System.out.print((k + 1) + "º" + "\"" + edades[k] + "\"  ");
 			}
 			System.out.println(" ");
 		}
-		
+
 		System.out.println("================= Array de Edades ==================");
 		System.out.println("**================ Array Ordenado ==================**");
 		System.out.println("*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*==*=*=*=*=*=*=*=*=*=*\n");
-		
+
 		for (int k = 0; k < edades.length; k++) {
 			System.out.print((k + 1) + "º" + "\"" + edades[k] + "\"  ");
 

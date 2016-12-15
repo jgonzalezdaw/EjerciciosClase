@@ -10,25 +10,16 @@ public class Ejercicio14 {
 		System.out.println("Artículos");
 		System.out.println("=======================");
 		for (int i = 0; i < precios.length; i++) {
-			System.out.println(precios[i][0] + "\t" 
-					+ precios[i][1]);
+			System.out.println(precios[i][0] + "\t" + precios[i][1]);
 		}
-		
+
 		float total = 0;
-		for(int i=0; i < precios.length; i++){
+		for (int i = 0; i < precios.length; i++) {
 			total = total + Float.parseFloat(precios[i][1]);
 		}
-		
+
 		System.out.println("\nTotal: " + total + " €.");
 
 	}
 
 }
-
-
-
-
-
-
-
-
