@@ -28,7 +28,7 @@ public class Ejercicio22 {
 
 		System.out.println("\nNota de evaluación");
 		System.out.println("=====================");
-		
+
 		float media;
 		float examenes;
 		float trabajos;
@@ -46,15 +46,3 @@ public class Ejercicio22 {
 	}
 
 }
-
-
-
-
-
-
-
-
-
-
-
-

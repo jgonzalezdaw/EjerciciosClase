@@ -30,32 +30,19 @@ public class Ejercicio21 {
 		}
 
 		System.out.println("\nTotal nóminas: " + suma + " €.");
-		
+
 		int posMin = 0;
 		for (int i = 0; i < nominas.length; i++) {
-			
-			if(Float.parseFloat(nominas[i][2]) 
-					< Float.parseFloat(nominas[posMin][2])){
+
+			if (Float.parseFloat(nominas[i][2]) < Float.parseFloat(nominas[posMin][2])) {
 				posMin = i;
 			}
-			
+
 		}
-		
-		System.out.println("\nEl empleado con menor sueldo "
-				+ "es " + nominas[posMin][1] + " " + 
-				nominas[posMin][0] + ", que cobra " + 
-				nominas[posMin][2] + " €.");
+
+		System.out.println("\nEl empleado con menor sueldo " + "es " + nominas[posMin][1] + " " + nominas[posMin][0]
+				+ ", que cobra " + nominas[posMin][2] + " €.");
 
 	}
 
 }
-
-
-
-
-
-
-
-
-
-

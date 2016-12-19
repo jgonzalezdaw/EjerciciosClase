@@ -21,34 +21,20 @@ public class Ejercicio20 {
 		float suma = 0;
 		int posMin = 0;
 		for (int i = 0; i < nominas.length; i++) {
-			System.out.println(nominas[i][0] + "\t" + 
-					nominas[i][1] + "\t" + nominas[i][2]);
-			
+			System.out.println(nominas[i][0] + "\t" + nominas[i][1] + "\t" + nominas[i][2]);
+
 			suma = suma + Float.parseFloat(nominas[i][2]);
-			
-			if(Float.parseFloat(nominas[i][2]) 
-					< Float.parseFloat(nominas[posMin][2])){
+
+			if (Float.parseFloat(nominas[i][2]) < Float.parseFloat(nominas[posMin][2])) {
 				posMin = i;
 			}
 		}
-		
+
 		System.out.println("\nTotal nóminas: " + suma + " €.");
-		
-		System.out.println("\nEl empleado con menor sueldo "
-				+ "es " + nominas[posMin][1] + " " + 
-				nominas[posMin][0] + ", que cobra " + 
-				nominas[posMin][2] + " €.");
+
+		System.out.println("\nEl empleado con menor sueldo " + "es " + nominas[posMin][1] + " " + nominas[posMin][0]
+				+ ", que cobra " + nominas[posMin][2] + " €.");
 
 	}
 
 }
-
-
-
-
-
-
-
-
-
-
