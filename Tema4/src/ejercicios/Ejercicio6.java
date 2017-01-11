@@ -19,24 +19,7 @@ public class Ejercicio6 {
 
 		double cuadrado = numero * numero;
 		return cuadrado;
-		
+
 	}
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

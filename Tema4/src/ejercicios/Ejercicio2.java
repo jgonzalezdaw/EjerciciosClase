@@ -17,20 +17,11 @@ public class Ejercicio2 {
 	}
 
 	static String saludo(String nombre, int edad) {
-//		System.out.println("Hola, " + nombre + " no parece que tengas " 
-//				+ edad + " años.");
-		
-		String saludo = "Hola, " + nombre + " no parece que tengas " 
-				+ edad + " años.";
+		// System.out.println("Hola, " + nombre + " no parece que tengas "
+		// + edad + " años.");
+
+		String saludo = "Hola, " + nombre + " no parece que tengas " + edad + " años.";
 		return saludo;
 	}
 
 }
-
-
-
-
-
-
-
-
