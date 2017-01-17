@@ -9,6 +9,11 @@ public class Persona {
 	int edad;
 	
 	// Métodos
-	
-	
+	void mostrar(){
+		System.out.println("DNI: " + dni);
+		System.out.println("Nombre: " + nombre);
+		System.out.println("Apellidos: " + apellidos);
+		System.out.println("Edad: " + edad);
+	}
+		
 }
