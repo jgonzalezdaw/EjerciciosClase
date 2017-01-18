@@ -5,7 +5,7 @@ public class Ejemplo1 {
 	public static void main(String[] args) {
 		
 		Persona p1;
-		p1 = new Persona();
+		p1 = new Persona("82911922H","Jose Antonio","Coca", 21);
 
 		p1.dni = "82911922H";
 		p1.nombre = "Jose Antonio";
