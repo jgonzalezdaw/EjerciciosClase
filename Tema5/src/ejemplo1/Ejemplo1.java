@@ -3,6 +3,7 @@ package ejemplo1;
 public class Ejemplo1 {
 
 	public static void main(String[] args) {
+		
 		Persona p1;
 		p1 = new Persona();
 
