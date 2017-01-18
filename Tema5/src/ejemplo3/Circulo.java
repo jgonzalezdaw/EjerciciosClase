@@ -14,4 +14,27 @@ public class Circulo {
 		System.out.println("Color: " + color);
 	}
 	
+	double area(){
+		return Math.PI * radio * radio;
+	}
+	
+	double perimetro(){
+		return 2 * Math.PI * radio;
+	}
+	
+	
+	
 }
+
+
+
+
+
+
+
+
+
+
+
+
+

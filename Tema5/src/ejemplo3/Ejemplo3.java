@@ -9,6 +9,9 @@ public class Ejemplo3 {
 		c1.radio = 5;
 		c1.color = "rojo";
 		
+		c1.mostrar();
 		
+		System.out.println("El área de c1 es " + c1.area());
+		System.out.println("El perímetro de c1 es " + c1.perimetro());
 	}
 }
