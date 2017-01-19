@@ -28,19 +28,10 @@ public class Rectangulo {
 	}
 
 	boolean estaDentro(int a, int b) {
-		if (a > x && a < x + base && b > y - altura && b<y) {
+		if (a > x && a < x + base && b > y - altura && b < y) {
 			return true;
-		} 
+		}
 
 		return false;
 	}
 }
-
-
-
-
-
-
-
-
-

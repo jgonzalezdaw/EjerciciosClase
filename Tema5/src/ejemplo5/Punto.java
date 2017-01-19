@@ -1,9 +1,26 @@
-package ejemplo2;
+package ejemplo5;
 
 public class Punto {
 	// Atributos
 	int x, y; // Coordenadas del punto
 	String color; // Color del punto
+
+	// Constructores
+	Punto() {
+
+	}
+
+	Punto(int x, int y, String color) {
+		this.x = x;
+		this.y = y;
+		this.color = color;
+	}
+	
+	Punto(int x, int y){
+		this.x = x;
+		this.y = y;
+		this.color = "blanco";
+	}
 
 	// Métodos
 	void mostrar() {
