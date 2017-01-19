@@ -7,11 +7,6 @@ public class Ejemplo1 {
 		Persona p1;
 		p1 = new Persona("82911922H","Jose Antonio","Coca", 21);
 
-		p1.dni = "82911922H";
-		p1.nombre = "Jose Antonio";
-		p1.apellidos = "Coca";
-		p1.edad = 21;
-
 		System.out.println("Nombre completo: " 
 				+ p1.nombre + " " + p1.apellidos);
 
