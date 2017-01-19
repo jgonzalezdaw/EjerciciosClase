@@ -29,7 +29,7 @@ public class Persona {
 		
 //		this.nombre = nombre;
 //		this.apellidos = apellidos;
-//		// Damos a dni y edad unos valores por defecto.
+//		Damos a dni y edad unos valores por defecto.
 //		dni = "0000000A";
 //		edad = 30;
 	}
