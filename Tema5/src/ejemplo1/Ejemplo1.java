@@ -28,6 +28,10 @@ public class Ejemplo1 {
 		// Utilizamos el método mostrar()
 		System.out.println("\nDatos de p1:\n");
 		p1.mostrar();
+		
+		System.out.println("Creamos una tercera persona");
+		Persona p3 = new Persona("Carlos","Sogorb");
+		p3.mostrar();
 
 	}
 
