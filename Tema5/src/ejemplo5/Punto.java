@@ -19,7 +19,8 @@ public class Punto {
 	Punto(int x, int y){
 		this.x = x;
 		this.y = y;
-		this.color = "blanco";
+		// El color por defecto será blanco
+		color = "blanco";
 	}
 
 	// Métodos
