@@ -1,3 +1,5 @@
+package ejercicios;
+
 import java.util.Scanner;
 
 class Ejercicio12 {
@@ -29,7 +31,7 @@ class Ejercicio12 {
 	static void ordenar(int[] numeroStr) {
 		int posMin = 0;
 		int aux;
-		
+
 		// ordenamos el array
 		for (int i = 0; i < numeroStr.length - 1; i++) {
 			posMin = i;
