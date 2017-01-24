@@ -15,7 +15,7 @@ public class Ejemplo12 {
 
 		System.out.println("Nombre completo: " + p1.nombre + " " + p1.apellidos);
 
-		if (p1.edad >= 18) {
+		if (p1.getEdad() >= 18) {
 			System.out.println("Puede entrar a la discoteca.");
 		} else {
 			System.out.println("No puede entrar a la discoteca.");
