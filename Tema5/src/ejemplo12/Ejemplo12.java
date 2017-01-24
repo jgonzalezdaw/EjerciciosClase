@@ -13,7 +13,7 @@ public class Ejemplo12 {
 		Persona p1;
 		p1 = new Persona("82911922H", "Jose Antonio", "Coca", 21);
 
-		System.out.println("Nombre completo: " + p1.nombre + " " + p1.apellidos);
+		System.out.println("Nombre completo: " + p1.getNombre() + " " + p1.getApellidos());
 
 		if (p1.getEdad() >= 18) {
 			System.out.println("Puede entrar a la discoteca.");
@@ -22,12 +22,16 @@ public class Ejemplo12 {
 		}
 
 		Persona p2 = new Persona();
-		p2.dni = "3782363H";
-		p2.nombre = "Gustavo";
-		p2.apellidos = "Baquerizo";
-		p2.edad = 21;
+		p2.setDni("3782363H");
+		// p2.nombre = "Gustavo";
+		p2.setNombre("Gustavo");
+		p2.setApellidos("Baquerizo");
+		p2.setEdad(21);
 
-		System.out.println("Me llamo " + p2.nombre + " " + p2.apellidos + " y tengo " + p2.edad + " años.");
+		System.out.println(
+				"Me llamo " + p2.getNombre() + " " + 
+				p2.getApellidos() + " y tengo " + 
+				p2.getEdad() + " años.");
 
 		// Utilizamos el método mostrar()
 		System.out.println("\nDatos de p1:\n");
