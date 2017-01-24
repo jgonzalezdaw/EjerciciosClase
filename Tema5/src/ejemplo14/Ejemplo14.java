@@ -6,7 +6,7 @@ package ejemplo14;
  * @author csogorb
  *
  */
-public class Ejemplo10 {
+public class Ejemplo14 {
 	public static void main(String[] args) {
 		Circulo c1 = new Circulo();
 		c1.mostrar();
