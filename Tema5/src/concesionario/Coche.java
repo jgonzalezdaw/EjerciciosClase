@@ -10,9 +10,16 @@ public class Coche {
 	private int precio;
 	static int descuento;
 
+	Coche(String marca, String modelo, String color, String matricula, int precio) {
+		this.marca = marca;
+		this.modelo = modelo;
+		this.color = color;
+		this.matricula = matricula;
+		this.precio = precio;
+	}
+
 	// Metodos
 	void mostrar() {
-
 		System.out.println("Marca: " + marca);
 		System.out.println("Modelo: " + modelo);
 		System.out.println("Color: " + color);
@@ -37,11 +44,10 @@ public class Coche {
 		System.out.println("Frenando...");
 	}
 
-	void verPrecio() {
+	double verPrecio() {
 		int descontado = 
 				precio / 100 * descuento;
-		System.out.println("El precio del coche con "
-				+ "tu descuento es de " + (precio-descontado) + " €");
+		return precio-descontado;
 	}
 
 	// Metodos para mostrar
