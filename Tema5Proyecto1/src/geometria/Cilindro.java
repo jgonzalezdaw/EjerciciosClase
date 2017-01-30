@@ -4,7 +4,7 @@ public class Cilindro {
 
 	private int altura;
 	private int radio;
-	private final double PI = 3.141592;
+	private final static double PI = 3.141592;
 	
 	// Contructores
 	public Cilindro(){
