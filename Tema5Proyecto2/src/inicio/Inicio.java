@@ -36,7 +36,6 @@ public class Inicio {
 		System.out.println("Conversor de Calorias a Julios");
 		System.out.println("Ingresa Calorias:");
 		calorias = entrada.nextInt();
-
 	}
 
 }
