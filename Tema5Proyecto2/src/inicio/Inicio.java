@@ -14,17 +14,13 @@ public class Inicio {
 		// TODO Auto-generated method stub
 
 		System.out.println("Conversor de unidades");
-		Conversor c1 = new Conversor();
 
+		// Leemos algunos datos de consola.
 		getDatos();
 
-		c1.setMi(km);
-		c1.setAt(milibares);
-		c1.setJu(calorias);
-
-		System.out.println(km + " Km son : " + c1.getkm() + " Millas");
-		System.out.println(milibares + " Milibares son : " + c1.getMi() + " Atmosferas");
-		System.out.println(calorias + " Julios son : " + c1.getCa() + " Julios");
+		System.out.println(km + " Km son : " + Conversor.millas(km) + " Millas");
+		System.out.println(milibares + " milibares son : " + Conversor.atmosferas(milibares) + " Atmosferas");
+		System.out.println(calorias + " calorías son : " + Conversor.julios(calorias) + " Julios");
 
 	}
 

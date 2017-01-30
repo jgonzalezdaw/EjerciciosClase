@@ -2,45 +2,38 @@ package conversion;
 
 public class Conversor {
 
-	static final double KM_A_MILLAS = 0.621371;
-	static final double MB_A_ATM = 0.000987;
-	static final double CAL_A_JULIOS = 4.1868;
-	static double km;
-	static double milibares;;
-	static double calorias;
+	private static final double KM_A_MILLAS = 0.621371;
+	private static final double MB_A_ATM = 0.000987;
+	private static final double CAL_A_JULIOS = 4.1868;
 
 	public Conversor() {
 		System.out.println("Se ha llamado al metodo constructor vacio");
-
 	}
 
-	public void setMi(double km) {
-
-		this.km = km;
-	}
-
-	public void setAt(double milibares) {
-
-		this.milibares = milibares;
-	}
-
-	public void setJu(double calorias) {
-
-		this.calorias = calorias;
-	}
-
-	public double getkm() {
+	public static double millas(double km) {
 		return km * KM_A_MILLAS;
+	}
+
+	public static double km(double millas) {
+		return millas / KM_A_MILLAS;
 
 	}
 
-	public double getMi() {
+	public static double atmosferas(double milibares) {
 		return milibares * MB_A_ATM;
-
 	}
 
-	public double getCa() {
+	public static double milibares(double atmosferas) {
+		return atmosferas / MB_A_ATM;
+	}
+
+	public static double julios(double calorias) {
+
 		return calorias * CAL_A_JULIOS;
-
 	}
+
+	public static double calorias(double julios) {
+		return julios / CAL_A_JULIOS;
+	}
+
 }
