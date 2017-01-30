@@ -15,7 +15,7 @@ public class Cilindro {
 		this.radio = radio;
 	}
 	
-	// 
+	// Métodos de acceso
 	public int getAltura(){
 		return altura;
 	}
@@ -36,6 +36,7 @@ public class Cilindro {
 		area = 2*PI*radio*(altura+radio);
 		return area;
 	}
+	
 	public double getVolumen(){
 		double volumen;
 		volumen = PI * radio * radio * altura;
