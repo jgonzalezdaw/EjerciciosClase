@@ -7,10 +7,10 @@ public class Persona {
 	private String nombre;
 	private String apellidos;
 	private int edad;
-	
-	// Atributo que contará cuántos objetos de la clase  
+
+	// Atributo que contará cuántos objetos de la clase
 	// Persona se han creado.
-	static int contadorPersonas; 
+	static int contadorPersonas;
 
 	// Constructores
 	Persona(String dni, String nombre, String apellidos, int edad) {
@@ -19,7 +19,7 @@ public class Persona {
 		this.nombre = nombre;
 		this.apellidos = apellidos;
 		this.edad = edad;
-		
+
 		contadorPersonas++;
 	}
 
@@ -39,10 +39,9 @@ public class Persona {
 		System.out.println("Apellidos: " + apellidos);
 		System.out.println("Edad: " + edad);
 	}
-	
-	static void totalPersonas(){
-		System.out.println("*** Hay " + contadorPersonas + 
-				" objetos Persona creados.");
+
+	static void totalPersonas() {
+		System.out.println("*** Hay " + contadorPersonas + " objetos Persona creados.");
 	}
 
 	// Métodos de acceso.
@@ -79,8 +78,3 @@ public class Persona {
 	}
 
 }
-
-
-
-
-

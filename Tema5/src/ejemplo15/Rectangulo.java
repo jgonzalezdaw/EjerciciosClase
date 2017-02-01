@@ -12,17 +12,16 @@ public class Rectangulo {
 
 	}
 
-	Rectangulo(int x, int y, int base, int altura, 
-			String color) {
+	Rectangulo(int x, int y, int base, int altura, String color) {
 		this.x = x;
 		this.y = y;
 		this.base = base;
 		this.altura = altura;
 		this.color = color;
 	}
-	
-	Rectangulo(String color){
-		this(0,0,0,0,color);
+
+	Rectangulo(String color) {
+		this(0, 0, 0, 0, color);
 	}
 
 	// Métodos
@@ -52,13 +51,13 @@ public class Rectangulo {
 
 		return false;
 	}
-	
+
 	// Métodos de acceso
-	public int getX(){
+	public int getX() {
 		return x;
 	}
-	
-	public void setX(int x){
+
+	public void setX(int x) {
 		this.x = x;
 	}
 
@@ -93,20 +92,5 @@ public class Rectangulo {
 	public void setColor(String color) {
 		this.color = color;
 	}
-	
-	
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-

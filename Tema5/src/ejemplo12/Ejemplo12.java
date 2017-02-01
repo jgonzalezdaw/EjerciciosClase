@@ -29,9 +29,7 @@ public class Ejemplo12 {
 		p2.setEdad(21);
 
 		System.out.println(
-				"Me llamo " + p2.getNombre() + " " + 
-				p2.getApellidos() + " y tengo " + 
-				p2.getEdad() + " años.");
+				"Me llamo " + p2.getNombre() + " " + p2.getApellidos() + " y tengo " + p2.getEdad() + " años.");
 
 		// Utilizamos el método mostrar()
 		System.out.println("\nDatos de p1:\n");

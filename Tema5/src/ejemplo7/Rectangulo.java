@@ -12,8 +12,7 @@ public class Rectangulo {
 
 	}
 
-	Rectangulo(int x, int y, int base, int altura, 
-			String color) {
+	Rectangulo(int x, int y, int base, int altura, String color) {
 		this.x = x;
 		this.y = y;
 		this.base = base;

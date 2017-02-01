@@ -19,18 +19,10 @@ public class Ejemplo9 {
 
 		p1.mostrar();
 		p2.mostrar();
-		
-		Punto p3 = new Punto(10,10);
+
+		Punto p3 = new Punto(10, 10);
 		p3.mostrar();
 
 	}
 
 }
-
-
-
-
-
-
-
-

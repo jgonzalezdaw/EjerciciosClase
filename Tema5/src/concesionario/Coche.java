@@ -45,9 +45,8 @@ public class Coche {
 	}
 
 	double verPrecio() {
-		int descontado = 
-				precio / 100 * descuento;
-		return precio-descontado;
+		int descontado = precio / 100 * descuento;
+		return precio - descontado;
 	}
 
 	// Metodos para mostrar

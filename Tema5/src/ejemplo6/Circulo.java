@@ -6,13 +6,13 @@ public class Circulo {
 	int x, y; // Coordenadas del centro.
 	String color;
 	int radio;
-	
+
 	// Constructores
-	Circulo(){
-		
+	Circulo() {
+
 	}
-	
-	Circulo(int x, int y, String color, int radio){
+
+	Circulo(int x, int y, String color, int radio) {
 		this.x = x;
 		this.y = y;
 		this.color = color;

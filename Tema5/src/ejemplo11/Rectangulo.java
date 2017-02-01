@@ -12,17 +12,16 @@ public class Rectangulo {
 
 	}
 
-	Rectangulo(int x, int y, int base, int altura, 
-			String color) {
+	Rectangulo(int x, int y, int base, int altura, String color) {
 		this.x = x;
 		this.y = y;
 		this.base = base;
 		this.altura = altura;
 		this.color = color;
 	}
-	
-	Rectangulo(String color){
-		this(0,0,0,0,color);
+
+	Rectangulo(String color) {
+		this(0, 0, 0, 0, color);
 	}
 
 	// Métodos

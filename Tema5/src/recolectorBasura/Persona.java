@@ -1,4 +1,4 @@
-package ejemplo16;
+package recolectorBasura;
 
 public class Persona {
 
@@ -14,7 +14,6 @@ public class Persona {
 
 	// Constructores
 	Persona(String dni, String nombre, String apellidos, int edad) {
-		System.out.println("Se ha llamado al constructor " + "Persona(dni, nombre, apellidos, edad)");
 		this.dni = dni;
 		this.nombre = nombre;
 		this.apellidos = apellidos;
@@ -24,7 +23,6 @@ public class Persona {
 	}
 
 	Persona() {
-		System.out.println("Se ha llamado al constructor Persona()");
 		contadorPersonas++;
 	}
 
@@ -38,6 +36,14 @@ public class Persona {
 		System.out.println("Nombre: " + nombre);
 		System.out.println("Apellidos: " + apellidos);
 		System.out.println("Edad: " + edad);
+	}
+
+	static void totalPersonas() {
+		System.out.println("*** Hay " + contadorPersonas + " objetos Persona creados.");
+	}
+
+	public void finalize() {
+		System.out.println("El recolector de basura " + "me acaba de eliminar.");
 	}
 
 	// Métodos de acceso.

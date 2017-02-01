@@ -15,8 +15,8 @@ public class Punto {
 		this.y = y;
 		this.color = color;
 	}
-	
-	Punto(int x, int y){
+
+	Punto(int x, int y) {
 		this.x = x;
 		this.y = y;
 		// El color por defecto será blanco

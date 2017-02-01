@@ -6,22 +6,22 @@ public class Circulo {
 	private int x, y; // Coordenadas del centro.
 	private String color;
 	private int radio;
-	
+
 	// Constructores
-	Circulo(){
-		
+	Circulo() {
+
 	}
-	
-	Circulo(int x, int y, String color, int radio){
+
+	Circulo(int x, int y, String color, int radio) {
 		this.x = x;
 		this.y = y;
 		this.color = color;
 		this.radio = radio;
 	}
-	
-	Circulo(int x, int y){
+
+	Circulo(int x, int y) {
 		// Damos valores por defecto al radio y al color
-		this(x,y,"negro",100);
+		this(x, y, "negro", 100);
 	}
 
 	// Métodos
@@ -38,13 +38,13 @@ public class Circulo {
 	double perimetro() {
 		return 2 * Math.PI * radio;
 	}
-	
+
 	// Métodos de acceso
-	public int getX(){
+	public int getX() {
 		return x;
 	}
-	
-	public void setX(int x){
+
+	public void setX(int x) {
 		this.x = x;
 	}
 
@@ -71,24 +71,5 @@ public class Circulo {
 	public void setRadio(int radio) {
 		this.radio = radio;
 	}
-	
-	
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

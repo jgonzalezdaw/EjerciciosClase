@@ -50,18 +50,17 @@ public class Punto {
 		x = x + dx;
 		y = y + dy;
 	}
-	
-	static void totalPuntos(){
-		System.out.println("*** Hay " + contadorPuntos + 
-				" objetos de la clase Punto.");
+
+	static void totalPuntos() {
+		System.out.println("*** Hay " + contadorPuntos + " objetos de la clase Punto.");
 	}
-	
+
 	// Métodos de acceso
-	public int getX(){
+	public int getX() {
 		return x;
 	}
-	
-	public void setX(int x){
+
+	public void setX(int x) {
 		this.x = x;
 	}
 
@@ -80,21 +79,5 @@ public class Punto {
 	public void setColor(String color) {
 		this.color = color;
 	}
-	
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
