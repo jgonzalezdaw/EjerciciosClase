@@ -1,4 +1,4 @@
-package geometria;
+package net.carlos.geometria;
 
 public class Cilindro {
 

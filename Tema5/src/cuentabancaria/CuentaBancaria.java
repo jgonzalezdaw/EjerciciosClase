@@ -16,6 +16,10 @@ public class CuentaBancaria {
         saldo = saldo + cantidad;
     }
     
+    void depositar(int cantidad, int comision){
+    	this.saldo += cantidad - comision;
+    }
+    
     boolean retirar(int cantidad){
         if (cantidad <= saldo){
             saldo = saldo - cantidad;

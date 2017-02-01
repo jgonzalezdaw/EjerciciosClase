@@ -1,6 +1,6 @@
-package inicio;
+package net.carlos.inicio;
 
-import geometria.*;
+import net.carlos.geometria.Cilindro;
 
 public class Inicio {
 
