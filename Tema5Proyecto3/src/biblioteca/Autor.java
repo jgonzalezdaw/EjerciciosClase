@@ -18,7 +18,7 @@ public class Autor {
 	
 	public Autor (String nombre){
 		this.nombre = nombre;
-		this.email = "uknown";
+		this.email = "unknown";
 		this.fechaNacimiento = 0;
 	}
 
@@ -55,3 +55,17 @@ public class Autor {
 	}
 	
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

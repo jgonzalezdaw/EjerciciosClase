@@ -3,32 +3,31 @@ package biblioteca;
 public class Libro {
 
 	// Atributos
-	
+
 	private String titulo;
 	private String isbn;
 	private Autor autor;
-	static private int anyoActual;
-	
+	private static int anyoActual;
+
 	// Constructores
-	
-	public Libro (String titulo){
+
+	public Libro(String titulo) {
 		this.titulo = titulo;
 	}
-	
-	public Libro (String titulo, String isbn,Autor autor){
+
+	public Libro(String titulo, String isbn, Autor autor) {
 		this.titulo = titulo;
 		this.isbn = isbn;
 		this.autor = autor;
 	}
-	
-	
+
 	// Métodos de entrada
-	
-	public String getTitulo(){
+
+	public String getTitulo() {
 		return titulo;
 	}
-	
-	public void setTitulo(String titulo){
+
+	public void setTitulo(String titulo) {
 		this.titulo = titulo;
 	}
 
@@ -55,12 +54,25 @@ public class Libro {
 	public void setAnyoActual(int anyoActual) {
 		this.anyoActual = anyoActual;
 	}
-	
+
 	// Métodos
-	
-	public String toString(){
-		return "El título del libro es " + titulo + " el ISBN es " + isbn + " el autor es " + autor.getNombre() +
-				" con anyo " + anyoActual;
+
+	public String toString() {
+		return "El título del libro es " + titulo + 
+				" el ISBN es " + isbn + " el autor es " + 
+				autor.getNombre()
+				+ " con anyo " + anyoActual;
 	}
-	
+
 }
+
+
+
+
+
+
+
+
+
+
+
