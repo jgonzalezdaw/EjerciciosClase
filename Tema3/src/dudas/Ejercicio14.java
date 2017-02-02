@@ -20,30 +20,19 @@ public class Ejercicio14 {
 
 		for (int i = 0; i < precios.length; i++) {
 
-			if (Integer.parseInt(precios[i][1]) < 
-					Integer.parseInt(precios[posMin][1])) {
+			if (Integer.parseInt(precios[i][1]) < Integer.parseInt(precios[posMin][1])) {
 				posMin = i;
 			}
-			
-			if (Integer.parseInt(precios[i][1]) > 
-					Integer.parseInt(precios[posMax][1])) {
+
+			if (Integer.parseInt(precios[i][1]) > Integer.parseInt(precios[posMax][1])) {
 				posMax = i;
 			}
 
 		}
-		
-		System.out.println("\nEl producto más barato es " 
-				+ precios[posMin][0] + ", que vale "+ precios[posMin][1]);
-		System.out.println("\nEl producto más caro es " 
-				+ precios[posMax][0] + ", que vale "+ precios[posMax][1]);
+
+		System.out.println("\nEl producto más barato es " + precios[posMin][0] + ", que vale " + precios[posMin][1]);
+		System.out.println("\nEl producto más caro es " + precios[posMax][0] + ", que vale " + precios[posMax][1]);
 
 	}
 
 }
-
-
-
-
-
-
-

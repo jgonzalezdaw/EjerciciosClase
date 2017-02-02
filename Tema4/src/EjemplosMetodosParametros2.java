@@ -7,13 +7,13 @@ public class EjemplosMetodosParametros2 {
 		Scanner entrada = new Scanner(System.in);
 		System.out.println("Escribe un número:");
 		int numero = entrada.nextInt();
-		
+
 		tablaMultiplicar(numero);
 
 	}
 
 	static void tablaMultiplicar(int num) {
-		
+
 		System.out.println("\nTabla de multiplicar del " + num);
 		System.out.println("===================================");
 
@@ -24,17 +24,3 @@ public class EjemplosMetodosParametros2 {
 	}
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-

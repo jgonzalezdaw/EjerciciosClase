@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Ejercicio11 { // Ejercicio con un solo return cuando se piden dos.
 
 	public static void main(String[] args) {
-		
+
 		Scanner entrada = new Scanner(System.in);
 
 		String planetas[] = { "Mercurio", "Venus", "Tierra", "Marte", "Jupiter", "Saturno", "Uranio", "Neptuno",
@@ -23,9 +23,9 @@ public class Ejercicio11 { // Ejercicio con un solo return cuando se piden dos.
 
 			if (planeta.equals(planetas[i])) {
 				return i;
-			} 
+			}
 		}
-		
+
 		return -1;
 
 	}

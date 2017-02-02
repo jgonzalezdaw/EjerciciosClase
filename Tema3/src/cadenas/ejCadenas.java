@@ -46,8 +46,7 @@ public class ejCadenas {
 
 		// Convierte a cadenas los tipos de datos pasados como parámetro.
 		float a = 2.5f;
-		System.out.println("Convertimos el número a String: \n" 
-				+ String.valueOf(a));
+		System.out.println("Convertimos el número a String: \n" + String.valueOf(a));
 
 		// Convertimos un String a un int
 		// numero = numero * 2; (no deja porque no se puede multiplicar un
@@ -58,11 +57,3 @@ public class ejCadenas {
 
 	}
 }
-
-
-
-
-
-
-
-

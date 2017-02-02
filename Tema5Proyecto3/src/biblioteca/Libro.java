@@ -58,21 +58,8 @@ public class Libro {
 	// Métodos
 
 	public String toString() {
-		return "El título del libro es " + titulo + 
-				" el ISBN es " + isbn + " el autor es " + 
-				autor.getNombre()
+		return "El título del libro es " + titulo + " el ISBN es " + isbn + " el autor es " + autor.getNombre()
 				+ " con anyo " + anyoActual;
 	}
 
 }
-
-
-
-
-
-
-
-
-
-
-

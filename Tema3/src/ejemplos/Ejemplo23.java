@@ -43,22 +43,3 @@ public class Ejemplo23 {
 	}
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

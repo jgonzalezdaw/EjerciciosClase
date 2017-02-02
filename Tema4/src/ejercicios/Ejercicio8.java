@@ -16,7 +16,7 @@ public class Ejercicio8 {
 	}
 
 	static int min(int x, int y) {
-		return x < y ? x : y;	// Usando el operador ternario para abreviar.
+		return x < y ? x : y; // Usando el operador ternario para abreviar.
 		//
 		// if(x < y){
 		// return x;
@@ -26,16 +26,3 @@ public class Ejercicio8 {
 	}
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
