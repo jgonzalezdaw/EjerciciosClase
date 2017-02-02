@@ -33,11 +33,11 @@ public class Inicio {
 		System.out.println("ISBN del libro");
 		String isbn = entrada.nextLine();
 		
-		System.out.println("Introduce el año actual del libro");
+		System.out.println("Introduce el año actual");
 		int anyoLibro = entrada.nextInt();
 		
 		Libro l1 = new Libro(titulo, isbn,a1 );
-		l1.setAnyoActual(2017);
+		l1.setAnyoActual(anyoLibro);
 		
 		System.out.println(a1.toString());
 		System.out.println(l1.toString());
