@@ -18,6 +18,46 @@ public class Inicio {
 		System.out.println("Datos del libro:");
 		System.out.println(libro.toString()); 
 		
+		// Un libro escrito por un autor solamente.
+		Autor[] autores2 = new Autor[1];
+		autores2[0] = new Autor("Robert Louis Stevenson",
+				"stevenson@gmail.com",1800);
+		
+		Libro libro2 = new Libro(
+				"El extraño caso del Doctor Jeckyll y Mr. Hide",
+				"84099283",autores2);
+		System.out.println("Datos del segundo libro:");
+		System.out.println(libro2.toString());
+		
+		// Lista de autores de los libros
+		System.out.println("\nAutores del primer libro:");
+		System.out.println(libro.muestraAutores());
+		System.out.println("\nAutores del segundo libro:");
+		System.out.println(libro2.muestraAutores());
 	}
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

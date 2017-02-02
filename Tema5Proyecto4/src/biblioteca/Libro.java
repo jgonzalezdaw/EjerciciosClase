@@ -59,19 +59,29 @@ public class Libro {
 
 	public String toString() {
 		if (autores.length > 1) {
-			return "El título del libro es " + titulo + 
-					", el ISBN es " + isbn + 
-					", escrito por varios autores "
+			return "El título del libro es " + titulo + ", el ISBN es " + isbn + ", escrito por varios autores "
 					+ ", con año " + anyoActual;
 		} else {
-			return "El título del libro es " + titulo + 
-					" el ISBN es " + isbn + 
-					" el autor es " + autores[0].getNombre()
+			return "El título del libro es " + titulo + " el ISBN es " + isbn + " el autor es " + autores[0].getNombre()
 					+ " con año " + anyoActual;
 		}
 	}
 
+	public String muestraAutores() {
+
+		String lista = "";
+
+		for (int i = 0; i < autores.length; i++) {
+			lista = lista + "- " + autores[i].getNombre() + "\n";
+		}
+		
+		return lista;
+	}
+
 }
+
+
+
 
 
 
