@@ -41,6 +41,10 @@ public class Inicio {
 
 		System.out.println(a1.toString());
 		System.out.println(l1.toString());
+
+		// Creamos otro autor con sólo el nombre
+		Autor a2 = new Autor("Miguel de Cervantes");
+		System.out.println("Datos del segundo autor: " + a2.toString());
 	}
 
 }
