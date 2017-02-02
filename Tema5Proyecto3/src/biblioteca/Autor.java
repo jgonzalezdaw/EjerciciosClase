@@ -3,28 +3,27 @@ package biblioteca;
 public class Autor {
 
 	// Atributos
+	
 	private String nombre;
 	private String email;
 	private int fechaNacimiento;
-
+	
 	// Constructores
-	public Autor(String nombre, String email, int fechaNacimiento) {
+	
+	public Autor (String nombre, String email, int fechaNacimiento){
 		this.nombre = nombre;
 		this.email = email;
 		this.fechaNacimiento = fechaNacimiento;
 	}
-
-	public Autor(String nombre) {
-		this(nombre, "unknown,", 0);
+	
+	public Autor (String nombre){
+		this.nombre = nombre;
+		this.email = "uknown";
+		this.fechaNacimiento = 0;
 	}
 
-	// Métodos
-
-	public String toString() {
-		return "El autor es " + nombre + ", con email " + email + ", nacido el año " + fechaNacimiento + ".";
-	}
-
-	// Métodos de acceso
+	// Métodos de entrada
+	
 	public String getNombre() {
 		return nombre;
 	}
@@ -48,4 +47,11 @@ public class Autor {
 	public void setFechaNacimiento(int fechaNacimiento) {
 		this.fechaNacimiento = fechaNacimiento;
 	}
+	
+	// Métodos
+	
+	public String toString(){
+		return "El nombre del autor es " + nombre + " con email " + email + " y con fecha de nacimiento " + fechaNacimiento;
+	}
+	
 }
