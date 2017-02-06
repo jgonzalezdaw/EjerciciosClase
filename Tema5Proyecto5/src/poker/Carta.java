@@ -35,17 +35,17 @@ public class Carta {
 		}
 	}
 
-	public String toString(){
-		
-		String[] nombres = {"As","Dos","Tres","Cuatro","Cinco",
-				"Seis","Siete","Ocho","Nueve","Diez","Sota","Reina","Rey"};
-		String[] palos = {"Diamantes","Corazones","Picas","Tréboles"};
-		
-		String valorString = nombres[valor-1];
+	public String toString() {
+
+		String[] nombres = { "As", "Dos", "Tres", "Cuatro", "Cinco", "Seis", "Siete", "Ocho", "Nueve", "Diez", "Sota",
+				"Reina", "Rey" };
+		String[] palos = { "Diamantes", "Corazones", "Picas", "Tréboles" };
+
+		String valorString = nombres[valor - 1];
 		String paloString = palos[palo];
-		
+
 		return valorString + " de " + paloString;
-		
+
 	}
 
 }
