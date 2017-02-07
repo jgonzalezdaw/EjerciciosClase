@@ -15,7 +15,10 @@ public class Inicio {
 //		System.out.println("¿Son las cartas iguales? " + c1.compara(c2));
 
 		Baraja unaBaraja = new Baraja();
-		unaBaraja.ordenar();
+		//unaBaraja.ordenar();
+			
+		//unaBaraja.extraer();
+		unaBaraja.mostrar();
 	}
 
 }
