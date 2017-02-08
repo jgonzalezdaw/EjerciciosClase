@@ -29,12 +29,13 @@ public class Baraja {
 
 	public void cortar() {
 
-		Carta[] aux = new Carta[52];
+		Carta[] aux = new Carta[cartas.length];
+
 		// Colocamos las 26 últimas cartas (26 = cartas.length/2) al principio
 		for (int i = 0; i < cartas.length / 2; i++) {
 			aux[i] = cartas[cartas.length / 2 + i];
 		}
-		
+
 		// Colocamos las 26 primeras cartas al final
 		for (int i = cartas.length / 2; i < cartas.length; i++) {
 			aux[i] = cartas[i - cartas.length / 2];
@@ -42,6 +43,21 @@ public class Baraja {
 
 		cartas = aux;
 
+	}
+
+	public void barajar() {
+
+		int pos1 = 0, pos2 = 0;
+		Carta aux;
+		
+		for (int i = 0; i <= 100; i++) {
+			pos1 = (int) (Math.random() * 52);
+			pos2 = (int) (Math.random() * 52);
+
+			aux = cartas[pos1];
+			cartas[pos1] = cartas[pos2];
+			cartas[pos2] = aux;
+		}
 	}
 
 }
