@@ -46,7 +46,6 @@ public class Baraja {
 	}
 
 	public void barajar() {
-
 		int pos1 = 0, pos2 = 0;
 		Carta aux;
 		
@@ -59,8 +58,45 @@ public class Baraja {
 			cartas[pos2] = aux;
 		}
 	}
+	
+	public void barajarMasLento(){
+		
+		int valor, palo;
+		boolean repetida;
+		
+		for(int i = 0;i<cartas.length;i++){
+			
+			valor  = (int) (Math.random() * 13 + 1);
+			palo = (int) (Math.random() * 4);
+			repetida = false;
+			
+			for(int j = 0; j<i; j++){
+				if(cartas[j].getValor() == valor 
+						&& cartas[j].getPalo() == palo){
+					repetida = true;
+					break;
+				}
+			}
+			
+			if(!repetida){
+				cartas[i] = new Carta(valor,palo);
+				System.out.println("Carta " + i);
+			}
+			
+		}
+		
+	}
 
 }
+
+
+
+
+
+
+
+
+
 
 
 
