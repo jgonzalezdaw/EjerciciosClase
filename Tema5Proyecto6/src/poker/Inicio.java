@@ -19,7 +19,9 @@ public class Inicio {
 			
 		//unaBaraja.extraer();
 		//unaBaraja.mostrar();
-		unaBaraja.cortar();unaBaraja.mostrar();
+		//unaBaraja.cortar();unaBaraja.mostrar();
+		unaBaraja.barajarMasLento();
+		unaBaraja.mostrar();
 		
 	}
 
