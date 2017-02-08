@@ -76,10 +76,12 @@ public class Baraja {
 
 	}
 
-	private boolean estaRepetida(int pos, int valor, int palo) {
+	private boolean estaRepetida(int pos, 
+			int valor, int palo) {
 
 		for (int i = 0; i < pos; i++) {
-			if (cartas[i].getValor() == valor && cartas[i].getPalo() == palo) {
+			if (cartas[i].getValor() == valor 
+					&& cartas[i].getPalo() == palo) {
 				return true;
 			}
 		}
