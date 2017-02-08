@@ -71,7 +71,6 @@ public class Baraja {
 			} while (estaRepetida(i, valor, palo));
 
 			cartas[i] = new Carta(valor, palo);
-			System.out.println("Carta " + i);
 
 		}
 
