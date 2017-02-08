@@ -12,7 +12,21 @@ public class Polinomio {
 		coeficientes = new double[3];
 	}
 	
+	public Polinomio(int grado){
+		// Creamos un polinomio del grado indicado 
+		// con coeficientes 0.
+		coeficientes = new double[grado+1];
+	}
 	
+	public Polinomio(double[] coefs){
+		
+	}
 	
 
 }
+
+
+
+
+
+
