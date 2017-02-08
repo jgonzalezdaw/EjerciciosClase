@@ -19,11 +19,49 @@ public class Polinomio {
 	}
 	
 	public Polinomio(double[] coefs){
-		
+		coeficientes = coefs;
 	}
 	
+	public int getGrado(){
+		return coeficientes.length - 1;
+	}
 
+	// Suma un polinomio p a nuestro polinomio.
+	// Damos por supuesto que ambos son del mismo grado.
+	public Polinomio sumar(Polinomio q){
+		double[] suma = new double[coeficientes.length];
+		for (int i=0; i<coeficientes.length;i++){
+			suma[i] = coeficientes[i] + q.getCoeficientes()[i];
+		}
+		
+		return new Polinomio(suma);
+	}
+	
+	public void mostrarCoeficientes(){
+		// Muestra en una fila los coeficientes de este polinomio.
+		
+	}
+
+	public double[] getCoeficientes() {
+		return coeficientes;
+	}
+
+	public void setCoeficientes(double[] coeficientes) {
+		this.coeficientes = coeficientes;
+	}
+	
+	
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
