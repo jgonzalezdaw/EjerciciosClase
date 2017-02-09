@@ -100,7 +100,7 @@ public class Polinomio {
 		
 		double total = 0;
 		double valor;
-		for(int i=0; i<=coeficientes.length; i++){
+		for(int i=0; i<coeficientes.length; i++){
 			valor = coeficientes[i] * Math.pow(x, i);
 			total = total + valor;
 		}
