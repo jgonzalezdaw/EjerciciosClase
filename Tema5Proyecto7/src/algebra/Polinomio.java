@@ -95,6 +95,19 @@ public class Polinomio {
 		
 		return salida;
 	}
+	
+	public double evaluar(double x){
+		
+		double total = 0;
+		double valor;
+		for(int i=0; i<=coeficientes.length; i++){
+			valor = coeficientes[i] * Math.pow(x, i);
+			total = total + valor;
+		}
+		
+		return total;
+		
+	}
 
 	public double[] getCoeficientes() {
 		return coeficientes;
