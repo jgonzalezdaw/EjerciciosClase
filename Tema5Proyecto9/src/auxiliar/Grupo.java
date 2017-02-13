@@ -8,46 +8,44 @@ import java.util.Scanner;
 
 public class Grupo {
 
-	
 	// Atributos
-	
-	String nivel;
-	int curso;
-	String clase;
-	
+
+	private String nivel;
+	private int curso;
+	private String clase;
+
 	// Constructores
-	
-	public Grupo(){
-		
+
+	public Grupo() {
+
 	}
-	
-	public Grupo(String nivel, int curso, String clase){
+
+	public Grupo(String nivel, int curso, String clase) {
 		this.nivel = nivel;
 		this.curso = curso;
 		this.clase = clase;
 	}
-	
-	
-	// Métodos
-	
-	public String toString(){
+
+	// Mï¿½todos
+
+	public String toString() {
 		return "El nivel es " + nivel + " de " + curso + " curso " + " de la clase " + clase;
 	}
-	
-	public void leeDatos(){
-		
-		Scanner entrada = new Scanner (System.in);
-		
-		System.out.println("¿Nivel?");
+
+	public void leeDatos() {
+
+		Scanner entrada = new Scanner(System.in);
+
+		System.out.println("ï¿½Nivel?");
 		nivel = entrada.nextLine();
-		
-		System.out.println("¿Curso?");
+
+		System.out.println("ï¿½Curso?");
 		curso = entrada.nextInt();
-		
+
 		entrada.nextLine();
-		
-		System.out.println("¿Clase?");
+
+		System.out.println("ï¿½Clase?");
 		clase = entrada.nextLine();
 	}
-	
+
 }
