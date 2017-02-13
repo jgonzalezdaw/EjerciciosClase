@@ -32,7 +32,7 @@ public class Alumno {
 
 	public String toString() {
 		return "El n�mero de expediente es: " + numExpediente + "\nApellidos: " + apellidos + "\nNombre: " + nombre
-				+ "\nGrupo" + grupo.toString();
+				+ "\nGrupo: " + grupo.toString();
 	}
 
 	public void leeDatos() {

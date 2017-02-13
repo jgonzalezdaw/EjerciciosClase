@@ -28,13 +28,9 @@ public class Instituto {
 
 	public void delAlumno(int numExp) {
 
-		for (int i = 0; i < alumnos.length; i++) {
-
-			if (alumnos[i].getNumExpediente() == numExp) {
-				alumnos[i] = null;
-				break;
-			}
-
+		int posicion = buscaAlumno(numExp);
+		if (posicion != -1){
+			alumnos[posicion] = null;
 		}
 
 	}

@@ -10,8 +10,8 @@ public class Inicio {
 
 	public static void main(String[] args) {
 		
-		Alumno a = new Alumno();
-		a.leeDatos();
+//		Alumno a = new Alumno();
+//		a.leeDatos();
 		
 		Grupo g1 = new Grupo("ESO",4,"A");
 		
@@ -27,10 +27,7 @@ public class Inicio {
 		
 		i1.muestraAlumnos(); 
 		
-		System.out.println(i1.numAlumnos());
-		
-		// No funciona
-		//System.out.println(i1.buscaAlumnos(2)); 
+		System.out.println("Número de alumnos: " + i1.numAlumnos());
 		
 		i1.delAlumno(3);
 		
