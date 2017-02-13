@@ -7,77 +7,67 @@ public class Instituto {
 	 * @author tonino
 	 */
 	// Atributos
-	
+
 	private final int MAX_ALUMNOS = 10;
-	private Alumno alumnos[] = new Alumno[MAX_ALUMNOS];	
+	private Alumno alumnos[] = new Alumno[MAX_ALUMNOS];
 	// Constructores
-	
-	
-	
-	// Método
+
+	// Mï¿½todo
 	public void addAlumno(Alumno alu) {
-		
+
 		for (int i = 0; i < alumnos.length; i++) {
-			
-			if(alumnos[i] == null) {
+
+			if (alumnos[i] == null) {
 				alumnos[i] = alu;
 				break;
 			}
-			
+
 		}
-		
+
 	}
-	
+
 	public void delAlumno(int numExp) {
-		
+
 		for (int i = 0; i < alumnos.length; i++) {
-			
-			if(alumnos[i].getNumExpediente() == numExp ) {
+
+			if (alumnos[i].getNumExpediente() == numExp) {
 				alumnos[i] = null;
 				break;
 			}
-			
+
 		}
-		
+
 	}
-	
+
 	public void muestraAlumnos() {
 		for (int i = 0; i < alumnos.length; i++) {
 			if (alumnos[i] != null) {
-				System.out.println(alumnos[i]);
+				System.out.println(alumnos[i].toString());
 			}
 		}
-		 
+
 	}
-	
+
 	public int numAlumnos() {
 		int suma = 0;
-		
+
 		for (int i = 0; i < alumnos.length; i++) {
 			if (alumnos[i] != null) {
-				suma += 1;
+				suma++;
 			}
 		}
 		return suma;
-		
+
 	}
-	
-//	public int buscaAlumno(int numExp) {
-//		
-//	        
-//	        for (int i = 0; i < alumnos.length; i++) {
-//	            if (alumnos[i].getNumExpediente() == numExp) {
-//	                return i;
-//	            } else {
-//	                return -1;
-//	            }
-//	        }
-//	        
-//		
-//		
-//	}
-	
-	
-	
-	
+
+	public int buscaAlumno(int numExp) {
+		for (int i = 0; i < alumnos.length; i++) {
+			if (alumnos[i] != null && alumnos[i].getNumExpediente() == numExp) {
+				return i;
+			}
+		}
+
+		return -1;
+	}
+
 }
