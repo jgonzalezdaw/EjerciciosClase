@@ -40,7 +40,6 @@ public class Inicio {
 			System.exit(0);
 		default:
 			System.out.println("Error de entrada.\n");
-			menuPrincipal();
 		}
 		
 	}
