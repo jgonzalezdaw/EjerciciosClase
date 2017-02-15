@@ -11,7 +11,9 @@ public class Inicio {
 	private static Instituto instituto = new Instituto();
 	
 	public static void main(String[] args) {
-		menuPrincipal();
+		while(true){
+			menuPrincipal();
+		}
 	}
 
 	public static void menuPrincipal() {
