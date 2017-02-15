@@ -57,7 +57,16 @@ public class Instituto {
 			}
 		}
 		return suma;
-
+	}
+	
+	public int numGrupos(){
+		int suma = 0;
+		for (int i = 0; i < grupos.length; i++) {
+			if (grupos[i] != null) {
+				suma++;
+			}
+		}
+		return suma;
 	}
 
 	public int buscaAlumno(int numExp) {
@@ -71,3 +80,7 @@ public class Instituto {
 	}
 
 }
+
+
+
+
