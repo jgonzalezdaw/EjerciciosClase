@@ -46,9 +46,9 @@ public class Inicio {
 	}
 
 	public static void menuAlumnos() {
-		
+
 		int numExp;
-		
+
 		System.out.println("\nMenú Alumnos");
 		System.out.println("============");
 		System.out.println("1. Listar alumnos");
@@ -70,7 +70,7 @@ public class Inicio {
 			break;
 
 		case 2:
-			
+
 			Alumno a1 = new Alumno();
 			a1.leeDatos();
 			instituto.addAlumno(a1);
@@ -81,6 +81,7 @@ public class Inicio {
 			// que se usará como referencia para buscar
 			// el número de expediente del alumno que queremos borrar.
 			// Llamo al método delAlumno definido en Instituto.
+			
 			System.out.println("Indica el número de expediente del alumno que desea borrar.");
 			numExp = entrada.nextInt();
 			instituto.delAlumno(numExp);
@@ -89,7 +90,7 @@ public class Inicio {
 		case 4:
 			// Creo una nueva variable llamada numExp
 			// que se usará como referencia para buscar
-			// el número de expediente del alumno deseado en el 
+			// el número de expediente del alumno deseado en el
 			// método buscaAlumno() definido en Instituto.
 
 			System.out.println("Indica el número de expediente del alumno que desea buscar.");
