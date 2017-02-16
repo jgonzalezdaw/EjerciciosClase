@@ -4,16 +4,14 @@ import auxiliar.Alumno;
 import auxiliar.Grupo;
 
 public class Instituto {
-	/**
-	 * @author tonino
-	 */
+
 	// Atributos
 
 	private final int MAX_ALUMNOS = 30;
 	private final int MAX_GRUPOS = 20;
 	private Alumno alumnos[] = new Alumno[MAX_ALUMNOS];
 	private Grupo grupos[] = new Grupo[MAX_GRUPOS];
-	
+
 	// Constructores
 
 	// Método
@@ -33,7 +31,7 @@ public class Instituto {
 	public void delAlumno(int numExp) {
 
 		int posicion = buscaAlumno(numExp);
-		if (posicion != -1){
+		if (posicion != -1) {
 			alumnos[posicion] = null;
 		}
 
@@ -45,7 +43,6 @@ public class Instituto {
 				System.out.println(alumnos[i].toString());
 			}
 		}
-
 	}
 
 	public int numAlumnos() {
@@ -58,8 +55,8 @@ public class Instituto {
 		}
 		return suma;
 	}
-	
-	public int numGrupos(){
+
+	public int numGrupos() {
 		int suma = 0;
 		for (int i = 0; i < grupos.length; i++) {
 			if (grupos[i] != null) {
@@ -79,8 +76,10 @@ public class Instituto {
 		return -1;
 	}
 
+	public Alumno[] getAlumnos() {
+		return alumnos;
+	}
+	
+	
+
 }
-
-
-
-

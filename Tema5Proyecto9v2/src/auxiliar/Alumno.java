@@ -13,7 +13,7 @@ public class Alumno {
 	private int numExpediente;
 	private String apellidos;
 	private String nombre;
-	private Grupo grupo;
+	private int numGrupo;
 
 	// Constructores
 
@@ -21,36 +21,37 @@ public class Alumno {
 
 	}
 
-	public Alumno(int numExpediente, String apellidos, String nombre, Grupo grupo) {
+	public Alumno(int numExpediente, String apellidos, 
+			String nombre, int numGrupo) {
 		this.numExpediente = numExpediente;
 		this.apellidos = apellidos;
 		this.nombre = nombre;
-		this.grupo = grupo;
+		this.numGrupo = numGrupo;
 	}
 
 	// M�todos
 
 	public String toString() {
 		return numExpediente + "\t" + apellidos + 
-				"\t" + nombre + "\t" + grupo.toString();
+				"\t" + nombre + "\t" + numGrupo;
 	}
 
 	public void leeDatos() {
 		Scanner entrada = new Scanner(System.in);
 
-		System.out.println("�N�mero de expediente?");
+		System.out.println("¿Número de expediente?");
 		numExpediente = entrada.nextInt();
 
 		entrada.nextLine();
 
-		System.out.println("�Apellidos?");
+		System.out.println("¿Apellidos?");
 		apellidos = entrada.nextLine();
 
-		System.out.println("�Nombre?");
+		System.out.println("¿Nombre?");
 		nombre = entrada.nextLine();
 
-		grupo = new Grupo();
-		grupo.leeDatos();
+		System.out.println("¿Número de grupo?");
+		numGrupo = entrada.nextInt();
 	}
 
 	// Metodos de acceso
@@ -63,4 +64,15 @@ public class Alumno {
 		this.numExpediente = numExpediente;
 	}
 
+	public String getApellidos() {
+		return apellidos;
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+	
+	
+
+	
 }

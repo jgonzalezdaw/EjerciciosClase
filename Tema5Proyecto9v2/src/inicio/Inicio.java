@@ -3,15 +3,16 @@ package inicio;
 
 import java.util.Scanner;
 
+import auxiliar.Alumno;
 import instituto.Instituto;
 
 public class Inicio {
-	
+
 	private static Scanner entrada = new Scanner(System.in);
 	private static Instituto instituto = new Instituto();
-	
+
 	public static void main(String[] args) {
-		while(true){
+		while (true) {
 			menuPrincipal();
 		}
 	}
@@ -23,9 +24,9 @@ public class Inicio {
 		System.out.println("2. Alumnos");
 		System.out.println("3. Grupos");
 		System.out.println("4. Salir");
-		
+
 		int opcion = entrada.nextInt();
-		switch(opcion){
+		switch (opcion) {
 		case 1:
 			menuPrincipalResumen();
 			break;
@@ -41,10 +42,13 @@ public class Inicio {
 		default:
 			System.out.println("Error de entrada.\n");
 		}
-		
+
 	}
 
 	public static void menuAlumnos() {
+		
+		int numExp;
+		
 		System.out.println("\nMenú Alumnos");
 		System.out.println("============");
 		System.out.println("1. Listar alumnos");
@@ -52,6 +56,55 @@ public class Inicio {
 		System.out.println("3. Eliminar");
 		System.out.println("4. Buscar");
 		System.out.println("5. Atrás");
+
+		int opcion = entrada.nextInt();
+		switch (opcion) {
+
+		case 1:
+			// Creo un nuevo método en Instituto llamado muestraAlumnosDatos()
+			// que muestre el número de expediente, nombre y apellidos de los
+			// alumnos que tenemos.
+
+			System.out.println("Alumnos:");
+			instituto.muestraAlumnos();
+			break;
+
+		case 2:
+			
+			Alumno a1 = new Alumno();
+			a1.leeDatos();
+			instituto.addAlumno(a1);
+			break;
+
+		case 3:
+			// Creo una nueva variable llamada numExp
+			// que se usará como referencia para buscar
+			// el número de expediente del alumno que queremos borrar.
+			// Llamo al método delAlumno definido en Instituto.
+			System.out.println("Indica el número de expediente del alumno que desea borrar.");
+			numExp = entrada.nextInt();
+			instituto.delAlumno(numExp);
+			break;
+
+		case 4:
+			// Creo una nueva variable llamada numExp
+			// que se usará como referencia para buscar
+			// el número de expediente del alumno deseado en el 
+			// método buscaAlumno() definido en Instituto.
+
+			System.out.println("Indica el número de expediente del alumno que desea buscar.");
+			numExp = entrada.nextInt();
+
+			int posicion = instituto.buscaAlumno(numExp);
+			System.out.println("Datos del alumno:");
+			System.out.println(instituto.getAlumnos()[posicion].toString());
+
+			break;
+
+		case 5:
+			// Llamo al método menuPrincipal.
+			menuPrincipal();
+		}
 	}
 
 	public static void menuGrupos() {
@@ -63,9 +116,9 @@ public class Inicio {
 		System.out.println("4. Eliminar");
 		System.out.println("5. Atrás");
 	}
-	
+
 	// Muestra el número de alumnos y el número de grupos.
-	public static void menuPrincipalResumen(){
+	public static void menuPrincipalResumen() {
 		System.out.println("\nResumen del Instituto");
 		System.out.println("======================");
 		System.out.println("Alumnos: " + instituto.numAlumnos());
@@ -73,16 +126,3 @@ public class Inicio {
 	}
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
