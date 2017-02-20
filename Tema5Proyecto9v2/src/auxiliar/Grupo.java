@@ -38,7 +38,7 @@ public class Grupo {
 
 		System.out.println("¿Número de Grupo?");
 		numGrupo = entrada.nextInt();
-		
+
 		entrada.nextLine();
 
 		System.out.println("¿Nivel?");
@@ -57,5 +57,4 @@ public class Grupo {
 		return numGrupo;
 	}
 
-	
 }

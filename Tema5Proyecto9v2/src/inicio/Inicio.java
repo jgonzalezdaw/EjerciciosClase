@@ -19,22 +19,22 @@ public class Inicio {
 
 	public static void main(String[] args) {
 		fakeData();
-		
+
 		while (true) {
 			menuPrincipal();
 		}
 	}
-	
-	private static void fakeData(){
-		
-		instituto.addGrupo(new Grupo(1,"ESO",1,"A"));
-		instituto.addGrupo(new Grupo(2,"ESO",1,"B"));
-		instituto.addGrupo(new Grupo(3,"ESO",1,"C"));
-		
-		instituto.addAlumno(new Alumno(101,"Pérez","Ramón",1));
-		instituto.addAlumno(new Alumno(102,"Morillas","Javier",1));
-		instituto.addAlumno(new Alumno(103,"García","Rommel",2));
-		instituto.addAlumno(new Alumno(104,"Gallego","Eneko",2));
+
+	private static void fakeData() {
+
+		instituto.addGrupo(new Grupo(1, "ESO", 1, "A"));
+		instituto.addGrupo(new Grupo(2, "ESO", 1, "B"));
+		instituto.addGrupo(new Grupo(3, "ESO", 1, "C"));
+
+		instituto.addAlumno(new Alumno(101, "Pérez", "Ramón", 1));
+		instituto.addAlumno(new Alumno(102, "Morillas", "Javier", 1));
+		instituto.addAlumno(new Alumno(103, "García", "Rommel", 2));
+		instituto.addAlumno(new Alumno(104, "Gallego", "Eneko", 2));
 	}
 
 	public static void menuPrincipal() {
