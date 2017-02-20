@@ -21,8 +21,7 @@ public class Alumno {
 
 	}
 
-	public Alumno(int numExpediente, String apellidos, 
-			String nombre, int numGrupo) {
+	public Alumno(int numExpediente, String apellidos, String nombre, int numGrupo) {
 		this.numExpediente = numExpediente;
 		this.apellidos = apellidos;
 		this.nombre = nombre;
@@ -32,8 +31,7 @@ public class Alumno {
 	// M�todos
 
 	public String toString() {
-		return numExpediente + "\t" + apellidos + 
-				"\t" + nombre + "\t" + numGrupo;
+		return numExpediente + "\t" + apellidos + "\t" + nombre + "\t" + numGrupo;
 	}
 
 	public void leeDatos() {
@@ -71,8 +69,9 @@ public class Alumno {
 	public String getNombre() {
 		return nombre;
 	}
-	
-	
 
-	
+	public int getNumGrupo() {
+		return numGrupo;
+	}
+
 }

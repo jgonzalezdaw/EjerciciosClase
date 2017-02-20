@@ -4,6 +4,7 @@ package inicio;
 import java.util.Scanner;
 
 import auxiliar.Alumno;
+import auxiliar.Grupo;
 import instituto.Instituto;
 
 public class Inicio {
@@ -81,7 +82,7 @@ public class Inicio {
 			// que se usará como referencia para buscar
 			// el número de expediente del alumno que queremos borrar.
 			// Llamo al método delAlumno definido en Instituto.
-			
+
 			System.out.println("Indica el número de expediente del alumno que desea borrar.");
 			numExp = entrada.nextInt();
 			instituto.delAlumno(numExp);
@@ -116,6 +117,29 @@ public class Inicio {
 		System.out.println("3. Añadir");
 		System.out.println("4. Eliminar");
 		System.out.println("5. Atrás");
+
+		int opcion = entrada.nextInt();
+		switch (opcion) {
+
+		case 1:
+			System.out.println("Grupos:");
+			instituto.muestraGrupos();
+			break;
+		case 2:
+			System.out.println("¿Grupo a consultar?");
+			int numGrupo = entrada.nextInt();
+			instituto.muestraAlumnosGrupo(numGrupo);
+			break;
+		case 3:
+			Grupo g1 = new Grupo();
+			g1.leeDatos();
+			instituto.addGrupo(g1);
+			break;
+		case 4:
+			System.out.println("¿Grupo a eliminar?");
+			numGrupo = entrada.nextInt();
+			instituto.delGrupo(numGrupo);
+		}
 	}
 
 	// Muestra el número de alumnos y el número de grupos.

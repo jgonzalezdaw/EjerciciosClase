@@ -76,10 +76,53 @@ public class Instituto {
 		return -1;
 	}
 
+	public void muestraGrupos() {
+		for (int i = 0; i < grupos.length; i++) {
+			if (grupos[i] != null) {
+				System.out.println(grupos[i].toString());
+			}
+		}
+	}
+
+	public void muestraAlumnosGrupo(int numGrupo) {
+		System.out.println("Exp.\tApellidos\tNombres\tGrupo");
+		for (int i = 0; i < alumnos.length; i++) {
+			if (alumnos[i] != null && alumnos[i].getNumGrupo() == numGrupo) {
+
+				System.out.println(alumnos[i].toString());
+			}
+		}
+		System.out.println();
+	}
+
+	public void addGrupo(Grupo grup) {
+		for (int i = 0; i < grupos.length; i++) {
+			if (grupos[i] == null) {
+				grupos[i] = grup;
+				break;
+			}
+		}
+	}
+
+	public void delGrupo(int numGrupo) {
+		int posicion = buscaGrupo(numGrupo);
+		if (posicion != -1) {
+			grupos[posicion] = null;
+		}
+	}
+
+	public int buscaGrupo(int numGrupo) {
+		for (int i = 0; i < alumnos.length; i++) {
+			if (grupos[i] != null && grupos[i].getNumGrupo() == numGrupo) {
+				return i;
+			}
+		}
+
+		return -1;
+	}
+
 	public Alumno[] getAlumnos() {
 		return alumnos;
 	}
-	
-	
 
 }

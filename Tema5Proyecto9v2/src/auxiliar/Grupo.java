@@ -53,4 +53,9 @@ public class Grupo {
 		clase = entrada.nextLine();
 	}
 
+	public int getNumGrupo() {
+		return numGrupo;
+	}
+
+	
 }
