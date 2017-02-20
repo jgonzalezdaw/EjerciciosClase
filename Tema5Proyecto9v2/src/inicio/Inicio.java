@@ -7,15 +7,34 @@ import auxiliar.Alumno;
 import auxiliar.Grupo;
 import instituto.Instituto;
 
+// Opciones de mejora:
+// - No dejar borrar un grupo si hay alumnos en ese grupo.
+// - No dejar matricular un alumno si no existe ese número de grupo.
+// - No dejar repetir un número de expediente al matricular un alumno.
+
 public class Inicio {
 
 	private static Scanner entrada = new Scanner(System.in);
 	private static Instituto instituto = new Instituto();
 
 	public static void main(String[] args) {
+		fakeData();
+		
 		while (true) {
 			menuPrincipal();
 		}
+	}
+	
+	private static void fakeData(){
+		
+		instituto.addGrupo(new Grupo(1,"ESO",1,"A"));
+		instituto.addGrupo(new Grupo(2,"ESO",1,"B"));
+		instituto.addGrupo(new Grupo(3,"ESO",1,"C"));
+		
+		instituto.addAlumno(new Alumno(101,"Pérez","Ramón",1));
+		instituto.addAlumno(new Alumno(102,"Morillas","Javier",1));
+		instituto.addAlumno(new Alumno(103,"García","Rommel",2));
+		instituto.addAlumno(new Alumno(104,"Gallego","Eneko",2));
 	}
 
 	public static void menuPrincipal() {
