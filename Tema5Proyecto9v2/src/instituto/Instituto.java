@@ -3,6 +3,13 @@ package instituto;
 import auxiliar.Alumno;
 import auxiliar.Grupo;
 
+/**
+ * La clase Instituto representa los datos de un Instituto, con sus alumnos y
+ * grupos, así como las operaciones con ambos.
+ * 
+ * @author Carlos Sogorb
+ *
+ */
 public class Instituto {
 
 	// Atributos
@@ -14,21 +21,25 @@ public class Instituto {
 
 	// Constructores
 
-	// Método
+	/**
+	 * Añade el alumno que se le pasa como argumento al array alumnos[].
+	 * 
+	 * @param alu
+	 *            Alumno que hay que dar de alta en el instituto.
+	 */
 	public void addAlumno(Alumno alu) {
-		
+
 		// Comprobamos que no haya un alumno con ese número de expediente.
-		for(int i=0; i<alumnos.length; i++){
-			if(alumnos[i] != null && 
-					alumnos[i].getNumExpediente() == alu.getNumExpediente()){
+		for (int i = 0; i < alumnos.length; i++) {
+			if (alumnos[i] != null && alumnos[i].getNumExpediente() == alu.getNumExpediente()) {
 				System.out.println("Número de expediente repetido.");
 				return;
 			}
 		}
-		
+
 		// Comprobamos que el grupo exista.
 		for (int i = 0; i < grupos.length; i++) {
-			if(grupos[i] != null && grupos[i].getNumGrupo() == alu.getNumGrupo()){
+			if (grupos[i] != null && grupos[i].getNumGrupo() == alu.getNumGrupo()) {
 				System.out.println("No existe el grupo. Operación cancelada.");
 				return;
 			}
@@ -36,12 +47,10 @@ public class Instituto {
 
 		// Añadimos al alumno.
 		for (int i = 0; i < alumnos.length; i++) {
-
 			if (alumnos[i] == null) {
 				alumnos[i] = alu;
 				break;
 			}
-
 		}
 
 	}
@@ -63,6 +72,11 @@ public class Instituto {
 		}
 	}
 
+	/**
+	 * Devuelve el número de alumnos del instituto.
+	 * 
+	 * @return Número de alumnos del instituto.
+	 */
 	public int numAlumnos() {
 		int suma = 0;
 
@@ -123,14 +137,14 @@ public class Instituto {
 	}
 
 	public void delGrupo(int numGrupo) {
-		
+
 		for (int i = 0; i < alumnos.length; i++) {
-			if(alumnos[i] != null && alumnos[i].getNumGrupo() == numGrupo){
+			if (alumnos[i] != null && alumnos[i].getNumGrupo() == numGrupo) {
 				System.out.println("No se puede eliminar el grupo. Hay alumnos matriculados.");
 				return;
 			}
 		}
-		
+
 		int posicion = buscaGrupo(numGrupo);
 		if (posicion != -1) {
 			grupos[posicion] = null;

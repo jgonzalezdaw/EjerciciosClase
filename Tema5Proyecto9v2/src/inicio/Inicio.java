@@ -7,11 +7,6 @@ import auxiliar.Alumno;
 import auxiliar.Grupo;
 import instituto.Instituto;
 
-// Opciones de mejora:
-// - No dejar borrar un grupo si hay alumnos en ese grupo.
-// - No dejar matricular un alumno si no existe ese número de grupo.
-// - No dejar repetir un número de expediente al matricular un alumno.
-
 public class Inicio {
 
 	private static Scanner entrada = new Scanner(System.in);
