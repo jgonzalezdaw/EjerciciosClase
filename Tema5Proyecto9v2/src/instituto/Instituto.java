@@ -98,6 +98,16 @@ public class Instituto {
 		return suma;
 	}
 
+	/**
+	 * Busca si un alumno está matriculado en el centro, y devuelve su posición
+	 * en el array alumnos[].
+	 * 
+	 * @param numExp
+	 *            Número de expediente del alumno.
+	 * @return Posición en el array alumnos del alumno que hemos 
+	 * 		   recibido como
+	 *         parámetro, o -1 si no se encuentra.
+	 */
 	public int buscaAlumno(int numExp) {
 		for (int i = 0; i < alumnos.length; i++) {
 			if (alumnos[i] != null && alumnos[i].getNumExpediente() == numExp) {
