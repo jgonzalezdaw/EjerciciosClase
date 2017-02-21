@@ -17,6 +17,7 @@ public class Instituto {
 	// Método
 	public void addAlumno(Alumno alu) {
 		
+		// Comprobamos que no haya un alumno con ese número de expediente.
 		for(int i=0; i<alumnos.length; i++){
 			if(alumnos[i] != null && 
 					alumnos[i].getNumExpediente() == alu.getNumExpediente()){
@@ -24,7 +25,16 @@ public class Instituto {
 				return;
 			}
 		}
+		
+		// Comprobamos que el grupo exista.
+		for (int i = 0; i < grupos.length; i++) {
+			if(grupos[i] != null && grupos[i].getNumGrupo() == alu.getNumGrupo()){
+				System.out.println("No existe el grupo. Operación cancelada.");
+				return;
+			}
+		}
 
+		// Añadimos al alumno.
 		for (int i = 0; i < alumnos.length; i++) {
 
 			if (alumnos[i] == null) {
@@ -113,6 +123,14 @@ public class Instituto {
 	}
 
 	public void delGrupo(int numGrupo) {
+		
+		for (int i = 0; i < alumnos.length; i++) {
+			if(alumnos[i] != null && alumnos[i].getNumGrupo() == numGrupo){
+				System.out.println("No se puede eliminar el grupo. Hay alumnos matriculados.");
+				return;
+			}
+		}
+		
 		int posicion = buscaGrupo(numGrupo);
 		if (posicion != -1) {
 			grupos[posicion] = null;
