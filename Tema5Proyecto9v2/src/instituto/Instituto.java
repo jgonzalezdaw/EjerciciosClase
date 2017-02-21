@@ -16,6 +16,14 @@ public class Instituto {
 
 	// Método
 	public void addAlumno(Alumno alu) {
+		
+		for(int i=0; i<alumnos.length; i++){
+			if(alumnos[i] != null && 
+					alumnos[i].getNumExpediente() == alu.getNumExpediente()){
+				System.out.println("Número de expediente repetido.");
+				return;
+			}
+		}
 
 		for (int i = 0; i < alumnos.length; i++) {
 
