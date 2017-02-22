@@ -27,6 +27,40 @@ public class Instituto {
 	 * @param alu
 	 *            Alumno que hay que dar de alta en el instituto.
 	 */
+	public void addAlumno2(Alumno alu) {
+
+		// Comprobamos que no haya un alumno con ese número de expediente.
+		for (int i = 0; i < alumnos.length; i++) {
+			if (alumnos[i] != null && alumnos[i].getNumExpediente() == alu.getNumExpediente()) {
+				System.out.println("Número de expediente repetido.");
+				return;
+			}
+		}
+
+		// Comprobamos que el grupo en el que queremos matricular
+		// al alumno exista.
+		boolean grupoExiste = false;
+		for (int i = 0; i < grupos.length; i++) {
+			if (grupos[i] != null && grupos[i].getNumGrupo() == alu.getNumGrupo()) {
+				grupoExiste = true;
+				break;
+			}
+		}
+
+		if (!grupoExiste) {
+			return;
+		}
+
+		// Añadimos al alumno.
+		for (int i = 0; i < alumnos.length; i++) {
+			if (alumnos[i] == null) {
+				alumnos[i] = alu;
+				break;
+			}
+		}
+
+	}
+
 	public void addAlumno(Alumno alu) {
 
 		// Comprobamos que no haya un alumno con ese número de expediente.
@@ -40,25 +74,16 @@ public class Instituto {
 		// Comprobamos que el grupo exista.
 		boolean grupoExiste = false;
 		for (int i = 0; i < grupos.length; i++) {
-			if (grupos[i] != null && 
-					grupos[i].getNumGrupo() == alu.getNumGrupo()) {
+			if (grupos[i] != null && grupos[i].getNumGrupo() == alu.getNumGrupo()) {
 				grupoExiste = true;
 				break;
 			}
 		}
-		
-		if(!grupoExiste){
+		if (!grupoExiste) {
+			System.out.println("No existe el grupo. Operación cancelada.");
 			return;
-		}
 
-		// Añadimos al alumno.
-		for (int i = 0; i < alumnos.length; i++) {
-			if (alumnos[i] == null) {
-				alumnos[i] = alu;
-				break;
-			}
 		}
-
 	}
 
 	public void delAlumno(int numExp) {
@@ -110,8 +135,7 @@ public class Instituto {
 	 * 
 	 * @param numExp
 	 *            Número de expediente del alumno.
-	 * @return Posición en el array alumnos del alumno que hemos 
-	 * 		   recibido como
+	 * @return Posición en el array alumnos del alumno que hemos recibido como
 	 *         parámetro, o -1 si no se encuentra.
 	 */
 	public int buscaAlumno(int numExp) {
