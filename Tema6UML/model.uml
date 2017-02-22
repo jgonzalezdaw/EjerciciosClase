@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_LSwygPkrEeabz8jPv9fbEw" name="RootElement">
+  <packagedElement xmi:type="uml:Class" xmi:id="_RJ3IwPkrEeabz8jPv9fbEw" name="Persona" visibility="public">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_dE2eoPksEeabz8jPv9fbEw" name="dni" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_jIe1APksEeabz8jPv9fbEw" name="apellidos" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_msqtcPksEeabz8jPv9fbEw" name="nombre" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_OoIEcPkuEeawmZIzjq8iDQ" name="mostrar"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_uglVsPksEeabz8jPv9fbEw" name="Cliente">
+    <generalization xmi:type="uml:Generalization" xmi:id="_rlwG0PktEeawmZIzjq8iDQ" general="_RJ3IwPkrEeabz8jPv9fbEw"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4PUE0PksEeabz8jPv9fbEw" name="visa" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_lJe8EPkvEeawmZIzjq8iDQ" name="mostrar"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_-ARW0PksEeabz8jPv9fbEw" name="Empleado">
+    <generalization xmi:type="uml:Generalization" xmi:id="_uAY9QPktEeawmZIzjq8iDQ" general="_RJ3IwPkrEeabz8jPv9fbEw"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_ELYOMPktEeabz8jPv9fbEw" name="rango" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+</uml:Model>

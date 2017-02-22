@@ -5,6 +5,12 @@ public class Persona {
 	private String nombre;
 	private String apellidos;
 	
+	public void mostrar(){
+		System.out.println("DNI: " + dni);
+		System.out.println("Apellidos: " + apellidos);
+		System.out.println("Nombre: " + nombre);
+	}
+	
 	public String getDni() {
 		return dni;
 	}
