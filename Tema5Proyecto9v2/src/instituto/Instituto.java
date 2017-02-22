@@ -38,11 +38,17 @@ public class Instituto {
 		}
 
 		// Comprobamos que el grupo exista.
+		boolean grupoExiste = false;
 		for (int i = 0; i < grupos.length; i++) {
-			if (grupos[i] != null && grupos[i].getNumGrupo() == alu.getNumGrupo()) {
-				System.out.println("No existe el grupo. Operación cancelada.");
-				return;
+			if (grupos[i] != null && 
+					grupos[i].getNumGrupo() == alu.getNumGrupo()) {
+				grupoExiste = true;
+				break;
 			}
+		}
+		
+		if(!grupoExiste){
+			return;
 		}
 
 		// Añadimos al alumno.
