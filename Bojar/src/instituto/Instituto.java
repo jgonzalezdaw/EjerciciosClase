@@ -48,7 +48,6 @@ public class Instituto {
 		}
 		if (!grupoExiste) {
 			System.out.println("No existe el grupo. Operación cancelada.");
-
 			return;
 			
 		}

@@ -37,7 +37,7 @@ public class Alumno {
 	 * @param grupo
 	 *            Número del grupo al que pertence el alumno.
 	 */
-	public Alumno(int numExpediente, String apellidos, String nombre, int grupo) {
+	public Alumno(int numExpediente, String apellidos, String nombre, int numGrupo) {
 		this.numExpediente = numExpediente;
 		this.apellidos = apellidos;
 		this.nombre = nombre;

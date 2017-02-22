@@ -1,4 +1,4 @@
-package auxiliar;
+package principal;
 
 public class Persona {
 	private String dni;

@@ -1,6 +1,4 @@
-package auxiliar;
-import principal.Cliente;
-import principal.Empleado;
+package principal;
 
 public class Main {
 
