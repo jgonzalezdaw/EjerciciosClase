@@ -3,6 +3,15 @@ package principal;
 public class Cliente extends Persona{
 	private String visa;
 	
+	public Cliente(){
+		
+	}
+	
+	public Cliente(String dni, String nombre, String apellidos, String visa) {
+		super(dni, nombre, apellidos);
+		this.visa = visa;
+	}
+
 	@Override
 	public void mostrar(){
 		super.mostrar();
