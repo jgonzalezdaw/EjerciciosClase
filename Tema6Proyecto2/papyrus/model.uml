@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_Chcl0P8pEealgNn3kSh3_Q" name="RootElement">
+  <packagedElement xmi:type="uml:Class" xmi:id="_OsV1YP8pEealgNn3kSh3_Q" name="Vehiculo" isAbstract="true">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_x-ZNwP8pEealgNn3kSh3_Q" name="matricula" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_0u938P8pEealgNn3kSh3_Q" name="marca" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_3pFfsP8pEealgNn3kSh3_Q" name="modelo" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_7GurQP8pEealgNn3kSh3_Q" name="color" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_B-sBkP8qEealgNn3kSh3_Q" name="mostrar"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_H7diAP8qEealgNn3kSh3_Q" name="arrancar">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_H7diAf8qEealgNn3kSh3_Q" name="arrancado" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_vAIV4I7PEdySGvm5GN66HA"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_QyAr8P8qEealgNn3kSh3_Q" name="acelerar"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_SLJCEP8qEealgNn3kSh3_Q" name="frenar"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_bypu4P8qEealgNn3kSh3_Q" name="Coche">
+    <generalization xmi:type="uml:Generalization" xmi:id="_x6ONgP8rEealgNn3kSh3_Q" general="_OsV1YP8pEealgNn3kSh3_Q"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_jtWUkP8qEealgNn3kSh3_Q" name="puertas" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_91b3wP8qEealgNn3kSh3_Q" name="abrirCapo">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_91b3wf8qEealgNn3kSh3_Q" name="abierto" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_vAIV4I7PEdySGvm5GN66HA"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_DCLpcP8rEealgNn3kSh3_Q" name="cierreCentralizado">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_DCLpcf8rEealgNn3kSh3_Q" name="cerrado" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_vAIV4I7PEdySGvm5GN66HA"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_P5R3sP8rEealgNn3kSh3_Q" name="mostrar"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_UcLbIP8rEealgNn3kSh3_Q" name="Moto">
+    <generalization xmi:type="uml:Generalization" xmi:id="_wMSFAP8rEealgNn3kSh3_Q" general="_OsV1YP8pEealgNn3kSh3_Q"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_cUFykP8rEealgNn3kSh3_Q" name="sidecar" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_vAIV4I7PEdySGvm5GN66HA"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_jIdpYP8rEealgNn3kSh3_Q" name="antiwheelie">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_jIdpYf8rEealgNn3kSh3_Q" name="antiwhee" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_vAIV4I7PEdySGvm5GN66HA"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_k4rCwP8rEealgNn3kSh3_Q" name="mostrar"/>
+  </packagedElement>
+</uml:Model>
