@@ -16,7 +16,6 @@ public class Empleado extends Persona {
 	@Override
 	public void mostrar() {
 		super.mostrar();
-
 		System.out.println("Rango: " + rango);
 	}
 

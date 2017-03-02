@@ -1,8 +1,10 @@
 package reproductor;
 
-public class Medio {
+public abstract class Medio {
 
 	private String nombre;
 	private double duracion;
+	
+	public abstract void reproducir();
 	
 }
