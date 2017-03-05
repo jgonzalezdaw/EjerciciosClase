@@ -20,8 +20,11 @@ public class Inicio {
 		}
 	}
 
+	/**
+	 * Inicializamos el instituto con algunos datos de alumnos y grupos por
+	 * comodidad.
+	 */
 	private static void fakeData() {
-
 		instituto.addGrupo(new Grupo(1, "ESO", 1, "A"));
 		instituto.addGrupo(new Grupo(2, "ESO", 1, "B"));
 		instituto.addGrupo(new Grupo(3, "ESO", 1, "C"));
@@ -32,6 +35,9 @@ public class Inicio {
 		instituto.addAlumno(new Alumno(104, "Gallego", "Eneko", 2));
 	}
 
+	/**
+	 * Muestra el menú principal y ejecuta la acción elegida por el usuario.
+	 */
 	public static void menuPrincipal() {
 		System.out.println("Menú Principal");
 		System.out.println("==============");
@@ -60,6 +66,9 @@ public class Inicio {
 
 	}
 
+	/**
+	 * Muestra el menú Alumnos y ejecuta la acción elegida por el usuario.
+	 */
 	public static void menuAlumnos() {
 
 		int numExp;
@@ -76,38 +85,27 @@ public class Inicio {
 		switch (opcion) {
 
 		case 1:
-			// Creo un nuevo método en Instituto llamado muestraAlumnosDatos()
-			// que muestre el número de expediente, nombre y apellidos de los
-			// alumnos que tenemos.
-
+			// Listar los alumnos matriculados en el instituto.
 			System.out.println("Alumnos:");
 			instituto.muestraAlumnos();
 			break;
 
 		case 2:
-
+			// Añadir un nuevo alumno.
 			Alumno a1 = new Alumno();
 			a1.leeDatos();
 			instituto.addAlumno(a1);
 			break;
 
 		case 3:
-			// Creo una nueva variable llamada numExp
-			// que se usará como referencia para buscar
-			// el número de expediente del alumno que queremos borrar.
-			// Llamo al método delAlumno definido en Instituto.
-
+			// Eliminar un alumno.
 			System.out.println("Indica el número de expediente del alumno que desea borrar.");
 			numExp = entrada.nextInt();
 			instituto.delAlumno(numExp);
 			break;
 
 		case 4:
-			// Creo una nueva variable llamada numExp
-			// que se usará como referencia para buscar
-			// el número de expediente del alumno deseado en el
-			// método buscaAlumno() definido en Instituto.
-
+			// Buscar un alumno.
 			System.out.println("Indica el número de expediente del alumno que desea buscar.");
 			numExp = entrada.nextInt();
 
@@ -118,11 +116,14 @@ public class Inicio {
 			break;
 
 		case 5:
-			// Llamo al método menuPrincipal.
+			// Volver al menú principal.
 			menuPrincipal();
 		}
 	}
 
+	/**
+	 * Muestra el menú Grupos y ejecuta la acción elegida por el usuario.
+	 */
 	public static void menuGrupos() {
 		System.out.println("\nMenú Grupos");
 		System.out.println("============");
@@ -136,32 +137,42 @@ public class Inicio {
 		switch (opcion) {
 
 		case 1:
+			// Listar los grupos del instituto.
 			System.out.println("Grupos:");
 			instituto.muestraGrupos();
 			break;
+
 		case 2:
+			// Mostrar alumnos por grupo.
 			System.out.println("¿Grupo a consultar?");
 			int numGrupo = entrada.nextInt();
 			instituto.muestraAlumnosGrupo(numGrupo);
 			break;
+
 		case 3:
+			// Añadir un grupo.
 			Grupo g1 = new Grupo();
 			g1.leeDatos();
 			instituto.addGrupo(g1);
 			break;
+
 		case 4:
+			// Eliminar un grupo.
 			System.out.println("¿Grupo a eliminar?");
 			numGrupo = entrada.nextInt();
 			instituto.delGrupo(numGrupo);
 		}
 	}
 
-	// Muestra el número de alumnos y el número de grupos.
+	/**
+	 * Muestra el número de alumnos y el número de grupos.
+	 */
 	public static void menuPrincipalResumen() {
 		System.out.println("\nResumen del Instituto");
 		System.out.println("======================");
 		System.out.println("Alumnos: " + instituto.numAlumnos());
 		System.out.println("Grupos: " + instituto.numGrupos());
+		System.out.println();
 	}
 
 }
